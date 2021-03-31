@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Sintoney", Arial, Helvetica, sans-serif;
+}
+
+section {
+    min-height: 100vh;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.intro {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro h1 {
+    color: white;
+    font-size: 120px;
+}

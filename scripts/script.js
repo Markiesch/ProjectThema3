@@ -1,9 +1,10 @@
+//variable aanmaken
 var hamburger = document.getElementById("hamburger");
 var slideMenu = document.getElementById("slideMenu");
 var menuTriangle = document.getElementById("slideMenuTriangle");
 
+//toggle menu
 function toggleMenu() {
-    //toggle menu
     if (slideMenu.className == "menuClosed") {
         slideMenu.className = "menuOpen";
         hamburger.className = "closeMenu";

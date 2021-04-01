@@ -25,7 +25,7 @@
                 <div>
                     <h1>ICT-ACADEMIE</h1>
                     <h3>De toekomst in jouw handen</h3>
-                    <a href="pages/formulier.php">Studiekeuzetest</a>
+                    <a href="pages/formulier">Studiekeuzetest</a>
                 </div>
             </section>
             <div class="streep"></div>

@@ -8,7 +8,7 @@
                 <a href="/opleidingen">Opleidingen</a>
             </li>
             <li id="studietest">
-                <a href="/ProjectThema3/pages/formulier.php">Studiekeuze test</a>
+                <a href="/ProjectThema3/pages/formulier">Studiekeuze test</a>
                 <span class="newMenuItem">New</span>
             </li>
             <li>

@@ -21,18 +21,7 @@
             include "../includes/header.php";
         ?>
         <main>
-            <section class="intro">
-                <div>
-                    <h1>ICT-ACADEMIE</h1>
-                    <h3>De toekomst in jouw handen</h3>
-                    <a href="">Studiekeuzetest</a>
-                </div>
-            </section>
-            <div class="streep"></div>
-            <section>
-                <div></div>
-                <div></div>
-            </section>
+           
         </main>
         <?php
             include "../includes/footer.php";

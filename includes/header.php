@@ -21,13 +21,13 @@
     </nav>
     <div id="menuRight">
         <div id="headerIcons">
-            <a href="/">
+            <a href="/foreign-visitors">
                 <img src="/ProjectThema3/images/foreign-visitors.svg" alt="foreign-visitors" id="foreign-visitors" title="infomation for foreign-visitors">
             </a>
-            <a href="/">
+            <a href="https://onsportaal.kw1c.nl/" target="_blank">
                 <svg id="lock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path xmlns="http://www.w3.org/2000/svg" d="m336 192h-16v-64c0-70.59375-57.40625-128-128-128s-128 57.40625-128 128v64h-16c-26.453125 0-48 21.523438-48 48v224c0 26.476562 21.546875 48 48 48h288c26.453125 0 48-21.523438 48-48v-224c0-26.476562-21.546875-48-48-48zm-229.332031-64c0-47.0625 38.269531-85.332031 85.332031-85.332031s85.332031 38.269531 85.332031 85.332031v64h-170.664062zm0 0" data-original="#000000"/></g></svg>
             </a>
-            <a href="/">
+            <a href="/zoeken">
                 <svg id="search" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path xmlns="http://www.w3.org/2000/svg" d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" data-original="#000000"/><g xmlns="http://www.w3.org/2000/svg">
                         </g><g xmlns="http://www.w3.org/2000/svg">
                         </g><g xmlns="http://www.w3.org/2000/svg">
@@ -58,11 +58,11 @@
     </div>
     <div id="slideMenu" class="menuClosed">
         <!-- icons mobile -->
-        <a href="/" id="mobileLock" title="Het Portaal">
+        <a href="https://onsportaal.kw1c.nl/" target="_blank" id="mobileLock" title="Het Portaal">
             <img src="/ProjectThema3/images/lock.svg" alt="">
             <span>Portaal</span>
         </a>
-        <a href="/" id="mobileSearch" title="Zoeken op deze site">
+        <a href="/zoeken" id="mobileSearch" title="Zoeken op deze site">
             <img src="/ProjectThema3/images/search.svg" alt="">
             <span>Zoeken</span>
         </a>

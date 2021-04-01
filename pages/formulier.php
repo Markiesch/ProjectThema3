@@ -12,7 +12,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../styles/stylesheet.css">
         <link rel="stylesheet" href="../styles/formulier.css">
-        <link rel="stylesheet" href="../styles/includes.css">
         <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
         <script src="../scripts/script.js" defer></script>
         <title>ICT-Academie - Koning Willem I College</title>
@@ -65,9 +64,40 @@
             <section id="form">
                 <div id="formContainer">
                     <div id="formStartscreen">
-                        <h3>Welkom bij deze vragenlijst!</h3>
+                        <h3>
+                            <?php
+                                date_default_timezone_set("Europe/Amsterdam");
+                                $time = date("G");
+                                $msg = "";
+                                if($time >= 6 && $time < 12)
+                                {
+                                    $msg = "Goedemorgen";
+                                }
+                                elseif($time >= 12 && $time < 18)
+                                {
+                                    $msg = "Goedemiddag";
+                                }
+                                elseif($time >= 18 && $time < 24)
+                                {
+                                    $msg = "Goedenavond";
+                                }
+                                elseif($time >= 00 && $time < 24)
+                                {
+                                    $msg = "Goedenacht";
+                                }
+                                else
+                                {
+                                    $msg = "Hallo";
+                                }
+                                echo $msg . ",";
+                            ?>
+                        </h3>
                         <p>
-                            Dit is het startscherm, hier komt instuctie/uitleg.
+                            Wil jij graag weten of een van de ict opleidingen bij jou past? Doe dan nu de studietest!<br>
+                            Door middel van deze test kun jij er achter komen welke opleiding het beste bij jou past.<br>
+                            Heb je nog geen idee welke MBO opleiding je wilt doen? Of twijfel je misschien nog tussen een paar opleidingen?<br>
+                            Dan is dit de perfecte test! Vul hem eerlijk in, het is voor jezelf en je wilt wel een passende uitslag natuurlijk ;)<br>
+                            Lees hier boven hoe het werkt en start de test!
                         </p>
                         <form action="" method="post">
                             <label for="fullname">Voor- en Achternaam*</label>

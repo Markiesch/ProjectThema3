@@ -6,25 +6,122 @@
     padding: 0;
 }
 
+@font-face {
+    src: url("../fonts/Sintony-Regular.ttf");
+    font-family: "Sintony";
+    font-weight: 500;
+}
+@font-face {
+    src: url("../fonts/Sintony-Bold.ttf");
+    font-family: "Sintony";
+    font-weight: 600;
+}
+
+:root {
+    --blue: #0085ca;
+    --light-blue: #66b6df;
+    --red: #ef2b2d;
+}
+
+body.highcontrast {
+    --blue: #fff;
+    --light-blue: #eee;
+    --red: #000;
+}
+
 body {
-    font-family: "Sintoney", Arial, Helvetica, sans-serif;
+    font-family: "Sintony", Arial, Helvetica, sans-serif;
+    background-color: var(--light-blue);
+}
+
+h1 {
+    /* Min - ideal - max, font-size */
+    font-size: clamp(2.75rem, 1.75em + 4.75vw, 7.5rem);
+    font-weight: 600;
+}
+
+h3 {
+    font-size: clamp(1.25rem, 1em + 2vw, 2.75rem);
+    font-weight: 500;
+    /* font-size: 1.25rem; */
+}
+
+p {
+    font-size: clamp(0.8rem, 0.5em + 1.5vw, 1.25rem);
+}
+
+a {
+    font-size: clamp(1.4rem, 0.75em + 1.75vw, 1.75rem);
+    /* font-size: 1.75rem; */
 }
 
 section {
     min-height: 100vh;
-    background-image: url("../images/background.jpg");
-    background-size: cover;
-    background-position: center center;
+    position: relative;
 }
 
 .intro {
+    margin: 0 auto;
+    width: 100%;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(0.85);
+}
+
+.intro div {
+    /* Creëert een nieuwe stacking layer */
+    position: relative;
 }
 
 .intro h1 {
     color: white;
-    font-size: 120px;
+}
+
+.intro a {
+    background-color: var(--red);
+    color: white;
+    padding: 0.5em 1em;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 100px;
+}
+
+.intro h3 {
+    color: white;
+    margin: 0 0 0.75em 0;
+    animation: 300ms fadein ease;
+    overflow: hidden;
+}
+
+.streep {
+    background-color: white;
+    height: 12px;
+    background-image: url("../images/lijn.png");
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0.25;
+        transform: translateY(-50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }

@@ -50,9 +50,8 @@ p {
     font-size: clamp(0.8rem, 0.5em + 1.5vw, 1.25rem);
 }
 
-a {
+main a {
     font-size: clamp(1.4rem, 0.75em + 1.75vw, 1.75rem);
-    /* font-size: 1.75rem; */
 }
 
 section {
@@ -90,6 +89,7 @@ section {
 
 .intro h1 {
     color: white;
+    animation: 300ms fadein ease;
 }
 
 .intro a {

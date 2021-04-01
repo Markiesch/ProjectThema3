@@ -1,5 +1,7 @@
 <header>
-    <img src="/ProjectThema3/images/kw1c-logo.svg" alt="logo" class="logo">
+    <a href="/ProjectThema3/">
+        <img src="/ProjectThema3/images/kw1c-logo.svg" alt="logo" class="logo">
+    </a>
     <nav id="centerNav">
         <ul>
             <li>

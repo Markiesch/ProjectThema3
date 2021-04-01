@@ -23,8 +23,8 @@
             <section class="intro">
                 <div>
                     <h1>ICT-ACADEMIE</h1>
-                    <h3>De toekomst in jouw handen</h3>
-                    <a href="pages/formulier">Studiekeuzetest</a>
+                    <h2>De toekomst in jouw handen</h2>
+                    <a href="pages/formulier" class="btn">Studiekeuzetest</a>
                 </div>
             </section>
             <div class="streep"></div>

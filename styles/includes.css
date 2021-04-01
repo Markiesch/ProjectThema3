@@ -50,10 +50,14 @@ header .logo {
 
 #centerNav > ul > li:hover {
     background-color: #fff;
+    outline: none;
 }
 
-#centerNav > ul > li > a:hover {
+#centerNav > ul > li > a:hover,
+#centerNav > ul > li > a:focus {
     color: #0085ca;
+    background-color: #fff;
+    outline: none;
 }
 
 #studietest {

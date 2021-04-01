@@ -12,6 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../styles/stylesheet.css">
         <link rel="stylesheet" href="../styles/includes.css">
+        <link rel="stylesheet" href="../styles/formulier.css">
         <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
         <script src="../scripts/script.js" defer></script>
         <title>ICT-Academie - Koning Willem I College</title>
@@ -21,7 +22,44 @@
             include "../includes/header.php";
         ?>
         <main>
-           
+            <section class="intro banner">
+                <div>
+                    <h1>ICT-ACADEMIE</h1>
+                    <h2>Welke opleiding past bij jou?</h2>
+                </div>
+            </section>
+            <div class="streep"></div>
+            <h2 class="pagetitle">STUDIEKEUZE TEST</h2>
+            <section id="explanation">
+                <div>
+                    <h3>Hoe werkt het?</h3>
+                    <ol>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid.
+                        </li>
+                    </ol>
+                </div>
+                <div id="contact">
+                    <h3>Contact</h3>
+                    <div title="Bel het Studenten Succes Centrum">
+                        <img src="../images/phone.png" alt="phone">
+                        <a href="tel:073 624 9 600">073 624 9 600</a>
+                    </div>
+                    <div title="Stuur een e-mail naar het Studenten Succes Centrum">
+                        <img src="../images/email.png" alt="mail">
+                        <a href="mailto:info@kw1c.nl">info@kw1c.nl</a>
+                    </div>
+                </div>
+            </section>
         </main>
         <?php
             include "../includes/footer.php";

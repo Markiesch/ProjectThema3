@@ -1,29 +1,25 @@
 var hamburger = document.getElementById("hamburger");
 var slideMenu = document.getElementById("slideMenu");
+var menuTriangle = document.getElementById("slideMenuTriangle");
 
-function toggleMenu()
-{
+function toggleMenu() {
     //toggle menu
-    if(slideMenu.className == "menuClosed")
-    {
+    if (slideMenu.className == "menuClosed") {
         slideMenu.className = "menuOpen";
         hamburger.className = "closeMenu";
-        document.getElementById("slideMenuTriangle").style.opacity = 1;
-    }
-    else
-    {
+        menuTriangle.style.opacity = 1;
+    } else {
         slideMenu.className = "menuClosed";
         hamburger.classList.remove("closeMenu");
-        document.getElementById("slideMenuTriangle").style.opacity = 0;
+        menuTriangle.style.opacity = 0;
     }
 }
 
 document.querySelector("main").addEventListener("click", closeMenu);
-function closeMenu()
-{
+function closeMenu() {
     slideMenu.className = "menuClosed";
     hamburger.classList.remove("closeMenu");
-    document.getElementById("slideMenuTriangle").style.opacity = 0;
+    menuTriangle.style.opacity = 0;
 }
 
 //submenu's openen
@@ -37,32 +33,31 @@ sub2.addEventListener("click", openSub2);
 sub3.addEventListener("click", openSub3);
 sub4.addEventListener("click", openSub4);
 
-function openSub1(){
-    if(document.querySelector("#sub1 > .submenu").style.display == "block"){
+function openSub1() {
+    if (document.querySelector("#sub1 > .submenu").style.display == "block") {
         document.querySelector("#sub1 > .submenu").style.display = "none";
-    }else{
+    } else {
         document.querySelector("#sub1 > .submenu").style.display = "block";
     }
 }
-function openSub2(){
-    if(document.querySelector("#sub2 > .submenu").style.display == "block"){
+function openSub2() {
+    if (document.querySelector("#sub2 > .submenu").style.display == "block") {
         document.querySelector("#sub2 > .submenu").style.display = "none";
-    }else{
+    } else {
         document.querySelector("#sub2 > .submenu").style.display = "block";
     }
 }
-function openSub3(){
-    if(document.querySelector("#sub3 > .submenu").style.display == "block"){
+function openSub3() {
+    if (document.querySelector("#sub3 > .submenu").style.display == "block") {
         document.querySelector("#sub3 > .submenu").style.display = "none";
-    }else{
+    } else {
         document.querySelector("#sub3 > .submenu").style.display = "block";
     }
 }
-function openSub4(){
-    if(document.querySelector("#sub4 > .submenu").style.display == "block"){
+function openSub4() {
+    if (document.querySelector("#sub4 > .submenu").style.display == "block") {
         document.querySelector("#sub4 > .submenu").style.display = "none";
-    }else{
+    } else {
         document.querySelector("#sub4 > .submenu").style.display = "block";
     }
 }
-

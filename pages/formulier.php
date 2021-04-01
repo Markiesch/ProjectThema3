@@ -11,8 +11,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../styles/stylesheet.css">
-        <link rel="stylesheet" href="../styles/includes.css">
         <link rel="stylesheet" href="../styles/formulier.css">
+        <link rel="stylesheet" href="../styles/includes.css">
         <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
         <script src="../scripts/script.js" defer></script>
         <title>ICT-Academie - Koning Willem I College</title>
@@ -30,21 +30,23 @@
             </section>
             <div class="streep"></div>
             <h2 class="pagetitle">STUDIEKEUZE TEST</h2>
+            <!-- uitleg section -->
             <section id="explanation">
-                <div>
+                <div id="uitleg">
                     <h3>Hoe werkt het?</h3>
                     <ol>
                         <li>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid.
+                            Vul je naam in en klik op "Start de enquête".
                         </li>
                         <li>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid.
+                            Lees de vraag en geef eerlijk antwoord. Je kan bij elke vraag maar 1 antwoord kiezen.
                         </li>
                         <li>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid.
+                            Klik op volgende en beantwoord zo alle vragen. Bij de laatste vraag druk je op "Versturen".
                         </li>
                         <li>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid.
+                            Bekijk je score en neem indien je wilt, contact op.
+                            U kunt uw score ook downloaden in een pdf bestand.
                         </li>
                     </ol>
                 </div>
@@ -58,6 +60,31 @@
                         <img src="../images/email.png" alt="mail">
                         <a href="mailto:info@kw1c.nl">info@kw1c.nl</a>
                     </div>
+                </div>
+            </section>
+            <section id="form">
+                <div id="formContainer">
+                    <div id="formStartscreen">
+                        <h3>Welkom bij deze vragenlijst!</h3>
+                        <p>
+                            Dit is het startscherm, hier komt instuctie/uitleg.
+                        </p>
+                        <form action="" method="post">
+                            <label for="fullname">Voor- en Achternaam*</label>
+                            <input type="text" name="fullname" id="fullname" autocomplete="off" required>
+                            <input type="checkbox" name="acceptCookies" id="acceptCookies" required>
+                            <label for="acceptCookies">*Ik ga akkoord met de algemene voorwaarde en accepteer cookies</label>
+                        </form>
+                        <p>
+                            *verplicht in te vullen
+                        </p>
+                    </div>
+                    <!--
+                    <div id="header"></div>
+                    <div id="questions"></div>
+                    <div id="buttons"></div>
+                    <div id="footer"></div>
+                    -->
                 </div>
             </section>
         </main>

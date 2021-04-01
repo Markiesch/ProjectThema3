@@ -1,18 +1,78 @@
 /*
     style formulier.php
  */
+:root {
+    --blue: #0085ca;
+    --light-blue: #66b6df;
+    --red: #ef2b2d;
+    --white: #ffffff;
+}
+/* -- uitleg section -- */
 .pagetitle
 {
     font-size: 2.5em;
     font-weight: 800;
     text-align: center;
-    margin: 15px 0;
+    margin: 20px 0;
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
 }
 #explanation
 {
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
-    margin: 0 ;
+    align-items: start;
+    margin: 0 auto 50px auto;
 }
+/* uitleg blok */
+#uitleg, #contact
+{
+    background-color: var(--blue);
+    height: auto;
+    padding: 5px 10px;
+    margin: 0 10px;
+}
+#uitleg
+{
+    width: 50%;
+    min-width: 600px;
+}
+#uitleg ol
+{
+   margin: 10px 0 0 20px;
+}
+#uitleg ol li
+{
+   padding-bottom: 5px;
+}
+/* contact blok */
+#contact
+{
+    width: 25%;
+    min-width: 300px;
+}
+#contact img
+{
+    width: 18px;
+    height: auto;
+}
+#contact > div
+{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+#contact a
+{
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+#contact a:hover
+{
+    text-decoration: underline;
+}
+
+/* -- vragenlijst section -- */

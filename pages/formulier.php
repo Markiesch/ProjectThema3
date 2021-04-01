@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="../styles/formulier.css">
         <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
         <script src="../scripts/script.js" defer></script>
+        <script src="../scripts/formulier.js" defer></script>
         <title>ICT-Academie - Koning Willem I College</title>
     </head>
     <body>
@@ -29,6 +30,44 @@
             </section>
             <div class="streep"></div>
             <h2 class="pagetitle">STUDIEKEUZE TEST</h2>
+            <?php
+                //form username cookie
+                $usernamePopUp = "";
+                if (isset($_COOKIE["username"]))
+                {
+                    $usernamePopUp = "";
+                }
+                else
+                {
+                    $usernamePopUp = "
+                        <div id='usernamePopUp'>
+                            <form action='formulier.php' method='post'>
+                                <div>
+                                    <h3>Vul je naam in</h3>
+                                    <span>&#10005;</span>
+                                </div>
+                                <label for='fullname'>Voor- en Achternaam</label>
+                                <input type='text' name='fullname' id='fullname' required><br>
+                                <input type='checkbox' name='acceptCookies' id='acceptCookies' required>
+                                <label for='acceptCookies'>Ik ga akkoord met de algemene voorwaarde en accepteer cookies</label><br>
+            
+                                <input type='submit' name='submit' value='Versturen'>
+                            </form>
+                        </div>
+                        <div id='usernameOverlay'></div>
+                        ";
+                }
+                echo $usernamePopUp;
+
+                if(isset($_POST["submit"]) && isset($_POST["acceptCookies"]))
+                {
+                    setcookie("username", $_POST["fullname"], strtotime("+1 year"), "/");
+                }
+                else
+                {
+                    setcookie("username", $_POST["fullname"], strtotime("+1 year"), "/");
+                }
+            ?>
             <!-- uitleg section -->
             <section id="explanation">
                 <div id="uitleg">
@@ -99,22 +138,11 @@
                             Dan is dit de perfecte test! Vul hem eerlijk in, het is voor jezelf en je wilt wel een passende uitslag natuurlijk ;)<br>
                             Lees hier boven hoe het werkt en start de test!
                         </p>
-                        <form action="" method="post">
-                            <label for="fullname">Voor- en Achternaam*</label>
-                            <input type="text" name="fullname" id="fullname" autocomplete="off" required>
-                            <input type="checkbox" name="acceptCookies" id="acceptCookies" required>
-                            <label for="acceptCookies">*Ik ga akkoord met de algemene voorwaarde en accepteer cookies</label>
-                        </form>
-                        <p>
-                            *verplicht in te vullen
-                        </p>
                     </div>
-                    <!--
                     <div id="header"></div>
                     <div id="questions"></div>
                     <div id="buttons"></div>
                     <div id="footer"></div>
-                    -->
                 </div>
             </section>
         </main>

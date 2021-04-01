@@ -21,7 +21,6 @@
         ?>
         <main>
             <section class="intro">
-                <div class="intro--background"></div>
                 <div>
                     <h1>ICT-ACADEMIE</h1>
                     <h3>De toekomst in jouw handen</h3>

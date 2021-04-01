@@ -21,7 +21,44 @@
             include "../includes/header.php";
         ?>
         <main>
-           
+            <section class="intro banner">
+                <div>
+                    <h1>ICT-ACADEMIE</h1>
+                    <h3>Welke opleiding past bij jou?</h3>
+                </div>
+            </section>
+            <div class="streep"></div>
+            <section id="explanation">
+                <h2>STUDIEKEUZE TEST</h2>
+                <div>
+                    <h3>Hoe werkt het?</h3>
+                    <ol>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidid.
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <div title="Bel het Studenten Succes Centrum">
+                        <img src="../images/phone.png" alt="phone">
+                        <a href="tel:073 624 9 600">073 624 9 600</a>
+                    </div>
+                    <div title="Stuur een e-mail naar het Studenten Succes Centrum">
+                        <img src="../images/email.png" alt="mail">
+                        <a href="mailto:info@kw1c.nl">info@kw1c.nl</a>
+                    </div>
+                </div>
+            </section>
         </main>
         <?php
             include "../includes/footer.php";

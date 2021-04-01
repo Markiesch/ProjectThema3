@@ -24,7 +24,7 @@
             <section class="intro">
                 <div>
                     <h1>ICT-ACADEMIE</h1>
-                    <h3>De toekomst in jouw handen</h3>
+                    <h2>De toekomst in jouw handen</h2>
                     <a href="">Studiekeuzetest</a>
                 </div>
             </section>

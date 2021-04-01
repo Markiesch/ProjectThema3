@@ -14,6 +14,7 @@
     --blue: #0085ca;
     --light-blue: #66b6df;
     --red: #ef2b2d;
+    --white: #ffffff;
 }
 
 *,
@@ -33,6 +34,7 @@ body.highcontrast {
 body {
     font-family: "Sintony", Arial, Helvetica, sans-serif;
     background-color: var(--light-blue);
+    color: var(--white);
 }
 
 h1 {
@@ -41,23 +43,23 @@ h1 {
     font-weight: 600;
 }
 
-h3 {
+h2 {
     font-size: clamp(1.25rem, 1em + 2vw, 2.75rem);
     font-weight: 500;
-    /* font-size: 1.25rem; */
 }
 
-p {
+h3 {
+    font-size: clamp(1rem, 0.75em + 1.75vw, 1.5rem);
+    font-weight: 800;
+    /*font-size: 1rem;*/
+}
+
+p, a{
     font-size: clamp(0.8rem, 0.5em + 1.5vw, 1.25rem);
 }
 
-main a {
+main a.btn {
     font-size: clamp(1.4rem, 0.75em + 1.75vw, 1.75rem);
-}
-
-section {
-    min-height: 80vh;
-    position: relative;
 }
 
 .intro {
@@ -68,6 +70,7 @@ section {
     justify-content: center;
     align-items: center;
     position: relative;
+    min-height: 80vh;
 }
 
 .intro::before {
@@ -82,10 +85,14 @@ section {
     background-position: center center;
     filter: brightness(0.85);
 }
+.banner::before {
+    background-image: url("../images/bannerred.png");
+}
 
 .intro div {
     /* Creëert een nieuwe stacking layer */
     position: relative;
+    width: 100%;
 }
 
 .intro h1 {
@@ -93,7 +100,7 @@ section {
     animation: 300ms fadein ease;
 }
 
-.intro a {
+.intro a.btn {
     background-color: var(--red);
     color: white;
     padding: 0.5em 1em;
@@ -103,11 +110,11 @@ section {
     transition: transform 300ms ease;
 }
 
-.intro a:hover {
+.intro a.btn:hover {
     transform: translateY(-10%);
 }
 
-.intro h3 {
+.intro h2 {
     color: white;
     margin: 0 0 0.75em 0;
     animation: 300ms fadein ease;

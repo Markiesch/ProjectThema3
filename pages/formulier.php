@@ -12,6 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../styles/stylesheet.css">
         <link rel="stylesheet" href="../styles/includes.css">
+        <link rel="stylesheet" href="../styles/formulier.css">
         <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
         <script src="../scripts/script.js" defer></script>
         <title>ICT-Academie - Koning Willem I College</title>
@@ -24,12 +25,12 @@
             <section class="intro banner">
                 <div>
                     <h1>ICT-ACADEMIE</h1>
-                    <h3>Welke opleiding past bij jou?</h3>
+                    <h2>Welke opleiding past bij jou?</h2>
                 </div>
             </section>
             <div class="streep"></div>
+            <h2 class="pagetitle">STUDIEKEUZE TEST</h2>
             <section id="explanation">
-                <h2>STUDIEKEUZE TEST</h2>
                 <div>
                     <h3>Hoe werkt het?</h3>
                     <ol>
@@ -47,7 +48,7 @@
                         </li>
                     </ol>
                 </div>
-                <div>
+                <div id="contact">
                     <h3>Contact</h3>
                     <div title="Bel het Studenten Succes Centrum">
                         <img src="../images/phone.png" alt="phone">

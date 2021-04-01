@@ -18,6 +18,14 @@ function toggleMenu()
     }
 }
 
+document.querySelector("main").addEventListener("click", closeMenu);
+function closeMenu()
+{
+    slideMenu.className = "menuClosed";
+    hamburger.classList.remove("closeMenu");
+    document.getElementById("slideMenuTriangle").style.opacity = 0;
+}
+
 //submenu's openen
 var sub1 = document.getElementById("sub1");
 var sub2 = document.getElementById("sub2");

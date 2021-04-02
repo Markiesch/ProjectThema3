@@ -78,19 +78,19 @@
 /* -- studiekeuze test -- */
 #studietest
 {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 #studietest #formContainer
 {
     position: relative;
     background-color: var(--blue);
-    width: 75%;
-    min-width: 920px;
+    width: 930px;
     min-height: 500px;
     margin: 50px auto;
     padding: 10px 20px;
 }
+/* form header */
 #formContainer #fheader
 {
     width: 100%;
@@ -100,10 +100,69 @@
     align-items: center;
     border-bottom: 1px solid var(--white);
 }
+
+/* form buttons */
+#formContainer #fbuttons
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+#fbuttons #prevBtn
+{
+    border: 2px solid transparent;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    outline: none;
+    transition: 150ms linear;
+}
+#fbuttons #prevBtn:hover,
+#fbuttons #prevBtn:focus
+{
+    border: 2px solid #000;
+}
+#fbuttons #prevBtn img
+{
+    width: 30px;
+    height: auto;
+    pointer-events: none;
+}
+#fbuttons #nextBtn
+{
+    border: 2px solid var(--red);
+    width: 150px;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    outline: none;
+    transition: 150ms linear;
+    background-color: transparent;
+}
+#fbuttons #nextBtn:hover,
+#fbuttons #nextBtn:focus
+{
+    background-color: var(--red);
+}
+#fbuttons #nextBtn img
+{
+    width: 30px;
+    height: auto;
+    pointer-events: none;
+}
+
+/* form footer */
 #formContainer #ffooter
 {
     width: 100%;
-    height: auto;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -100,8 +100,67 @@
                             Lees hier boven hoe het werkt en start de test!
                         </p>
                     </div>-->
-                    <div id="fquestions"></div>
-                    <div id="fbuttons"></div>
+                    <div id="fquestions">
+                        <form action="resultaat.php" method="post">
+                            <div class="quistion" id="q1">
+                                <h3>Vraag 1: Ben je meer geïnteresseerd in Hardware of in Software?</h3>
+                                <div class="answers">
+                                    <input type="radio" name="quist1" value="1a" id="1a">
+                                    <label for="1a">A. Antwoord a</label><br>
+                                    <input type="radio" name="quist1" value="1b" id="1b">
+                                    <label for="1b">B. Antwoord b</label><br>
+                                    <input type="radio" name="quist1" value="1c" id="1c">
+                                    <label for="1c">C. Antwoord c</label><br>
+                                    <input type="radio" name="quist1" value="1d" id="1d">
+                                    <label for="1d">D. Antwoord d</label><br>
+                                </div>
+                                <div class="image">
+                                    <!--<img src="" alt="" title="">-->
+                                </div>
+                            </div>
+                            <div class="quistion" id="q2">
+                                <h3>Vraag 2: ...</h3>
+                                <div class="answers">
+                                    <input type="radio" name="quist2" value="2a" id="2a">
+                                    <label for="2a">A. Antwoord a</label><br>
+                                    <input type="radio" name="quist2" value="2b" id="2b">
+                                    <label for="2b">B. Antwoord b</label><br>
+                                    <input type="radio" name="quist2" value="2c" id="2c">
+                                    <label for="2c">C. Antwoord c</label><br>
+                                    <input type="radio" name="quist2" value="2d" id="2d">
+                                    <label for="2d">D. Antwoord d</label><br>
+                                </div>
+                                <div class="image">
+                                    <!--<img src="" alt="" title="">-->
+                                </div>
+                            </div>
+                            <div class="quistion" id="q3">
+                                <h3>Vraag 3: ...</h3>
+                                <div class="answers">
+                                    <input type="radio" name="quist3" value="3a" id="3a">
+                                    <label for="3a">A. Antwoord a</label><br>
+                                    <input type="radio" name="quist3" value="3b" id="3b">
+                                    <label for="3b">B. Antwoord b</label><br>
+                                    <input type="radio" name="quist3" value="3c" id="3c">
+                                    <label for="3c">C. Antwoord c</label><br>
+                                    <input type="radio" name="quist3" value="3d" id="3d">
+                                    <label for="3d">D. Antwoord d</label><br>
+                                </div>
+                                <div class="image">
+                                    <!--<img src="" alt="" title="">-->
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="fbuttons">
+                        <button class="btn" id="prevBtn">
+                            <img src="../images/left-arrow.svg" alt="<--">
+                        </button>
+                        <button class="btn" id="nextBtn">
+                            <span>Volgende</span>
+                            <img src="../images/right-arrow.svg" alt="">
+                        </button>
+                    </div>
                     <div id="ffooter">
                         <a href="/privacyverklaring" target="_blank">Privacy en gegevensbeheer</a>
                         <a href="/feedback" target="_blank">Feedback</a>

@@ -108,7 +108,7 @@ main a.btn {
     animation: 300ms fadein ease;
 }
 
-.intro a.btn {
+.intro a.btn, .btn {
     background-color: var(--red);
     color: white;
     padding: 0.5em 1em;
@@ -116,6 +116,7 @@ main a.btn {
     text-decoration: none;
     border-radius: 100px;
     transition: transform 300ms ease;
+    cursor: pointer;
 }
 
 .intro a.btn:hover {

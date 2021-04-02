@@ -30,51 +30,13 @@
             </section>
             <div class="streep"></div>
             <h2 class="pagetitle">STUDIEKEUZE TEST</h2>
-            <?php
-                //form username cookie
-                $usernamePopUp = "";
-                if (isset($_COOKIE["username"]))
-                {
-                    $usernamePopUp = "";
-                }
-                else
-                {
-                    $usernamePopUp = "
-                        <div id='usernamePopUp'>
-                            <form action='formulier.php' method='post'>
-                                <div>
-                                    <h3>Vul je naam in</h3>
-                                    <span>&#10005;</span>
-                                </div>
-                                <label for='fullname'>Voor- en Achternaam</label>
-                                <input type='text' name='fullname' id='fullname' required><br>
-                                <input type='checkbox' name='acceptCookies' id='acceptCookies' required>
-                                <label for='acceptCookies'>Ik ga akkoord met de algemene voorwaarde en accepteer cookies</label><br>
-            
-                                <input type='submit' name='submit' value='Versturen'>
-                            </form>
-                        </div>
-                        <div id='usernameOverlay'></div>
-                        ";
-                }
-                echo $usernamePopUp;
-
-                if(isset($_POST["submit"]) && isset($_POST["acceptCookies"]))
-                {
-                    setcookie("username", $_POST["fullname"], strtotime("+1 year"), "/");
-                }
-                else
-                {
-                    setcookie("username", $_POST["fullname"], strtotime("+1 year"), "/");
-                }
-            ?>
             <!-- uitleg section -->
             <section id="explanation">
                 <div id="uitleg">
                     <h3>Hoe werkt het?</h3>
                     <ol>
                         <li>
-                            Vul je naam in en klik op "Start de enquête".
+                            Vul je naam in en klik op "Start de studiekeuze test".
                         </li>
                         <li>
                             Lees de vraag en geef eerlijk antwoord. Je kan bij elke vraag maar 1 antwoord kiezen.
@@ -100,35 +62,34 @@
                     </div>
                 </div>
             </section>
-            <section id="form">
+            <section id="studietest">
                 <div id="formContainer">
-                    <div id="formStartscreen">
+                    <div id="fheader">
+                        <h3 id="counter">Studiekeuze test</h3>
+                        <img src="../images/kw1c-logo.svg" alt="logo">
+                    </div>
+                   <!-- <div id="formStartscreen">
                         <h3>
                             <?php
-                                date_default_timezone_set("Europe/Amsterdam");
-                                $time = date("G");
-                                $msg = "";
-                                if($time >= 6 && $time < 12)
+                                function TimeGreeting()
                                 {
-                                    $msg = "Goedemorgen";
+                                    date_default_timezone_set("Europe/Amsterdam");
+                                    $time = date("G");
+                                    $msg = "";
+                                    if ($time >= 6 && $time < 12) {
+                                        $msg = "Goedemorgen";
+                                    } elseif ($time >= 12 && $time < 18) {
+                                        $msg = "Goedemiddag";
+                                    } elseif ($time >= 18 && $time < 24) {
+                                        $msg = "Goedenavond";
+                                    } elseif ($time >= 00 && $time < 24) {
+                                        $msg = "Goedenacht";
+                                    } else {
+                                        $msg = "Hallo";
+                                    }
+                                    return $msg;
                                 }
-                                elseif($time >= 12 && $time < 18)
-                                {
-                                    $msg = "Goedemiddag";
-                                }
-                                elseif($time >= 18 && $time < 24)
-                                {
-                                    $msg = "Goedenavond";
-                                }
-                                elseif($time >= 00 && $time < 24)
-                                {
-                                    $msg = "Goedenacht";
-                                }
-                                else
-                                {
-                                    $msg = "Hallo";
-                                }
-                                echo $msg . ",";
+                                echo TimeGreeting();
                             ?>
                         </h3>
                         <p>
@@ -138,11 +99,13 @@
                             Dan is dit de perfecte test! Vul hem eerlijk in, het is voor jezelf en je wilt wel een passende uitslag natuurlijk ;)<br>
                             Lees hier boven hoe het werkt en start de test!
                         </p>
+                    </div>-->
+                    <div id="fquestions"></div>
+                    <div id="fbuttons"></div>
+                    <div id="ffooter">
+                        <a href="/privacyverklaring" target="_blank">Privacy en gegevensbeheer</a>
+                        <a href="/feedback" target="_blank">Feedback</a>
                     </div>
-                    <div id="header"></div>
-                    <div id="questions"></div>
-                    <div id="buttons"></div>
-                    <div id="footer"></div>
                 </div>
             </section>
         </main>

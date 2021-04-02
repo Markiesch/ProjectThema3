@@ -233,7 +233,7 @@ header .logo {
 }
 
 #studietest:hover .newMenuItem {
-    transform: rotate(5deg);
+    transform: rotate(5deg) translate(0, -50%);
 }
 
 /* right buttons */

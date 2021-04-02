@@ -73,7 +73,7 @@
                 <a href="/opleidingen" title="Aanbod van opleidingen" style="background-image: none">Opleidingen</a>
             </li>
             <li id="studietest">
-                <a href="#" title="Doe nu de studiekeuze test!" style="background-image: none">Studiekeuze test</a>
+                <a href="/ProjectThema3/pages/formulier.php" title="Doe nu de studiekeuze test!" style="background-image: none">Studiekeuze test</a>
                 <span class="newMenuItem">New</span>
             </li>
             <li>

@@ -214,15 +214,15 @@ header .logo {
     outline: none;
 }
 
-#studietest {
+#studietest,
+#studietestMobile {
     position: relative;
 }
 
-.newMenuItem {
+.newMenuItem,
+.newMenuItemMobile {
     position: absolute;
-    top: 50%;
     right: 0;
-    transform: translate(0, -50%);
     padding: 2px 5px;
     background-color: var(--red);
     color: var(--white);
@@ -231,8 +231,18 @@ header .logo {
     transition: transform 200ms ease;
     pointer-events: none;
 }
+.newMenuItem {
+    top: 10px;
+}
+.newMenuItemMobile {
+    top: 50%;
+    transform: translate(0, -50%);
+}
 
-#studietest:hover .newMenuItem {
+#studietest:hover .newMenuItem{
+    transform: rotate(5deg);
+}
+#studietestMobile:hover .newMenuItemMobile {
     transform: rotate(5deg) translate(0, -50%);
 }
 

@@ -86,7 +86,7 @@
     position: relative;
     background-color: var(--blue);
     width: 930px;
-    min-height: 500px;
+    min-height: 480px;
     margin: 50px auto;
     padding: 10px 20px;
 }
@@ -101,6 +101,112 @@
     border-bottom: 1px solid var(--white);
 }
 
+/* form startscherm */
+#formStartscreen
+{
+    position: absolute;
+    z-index: 20;
+    min-height: 335px;
+    width: 900px;
+    background-color: var(--blue);
+    padding: 5px 0;
+}
+#formStartscreen h3
+{
+    margin-bottom: 10px;
+}
+#formStartscreen #usernameInput
+{
+    position: relative;
+    display: block;
+    margin: 40px auto 15px auto;
+    width: 215px;
+    padding: 5px;
+    background-color: transparent;
+    border-bottom: 3px solid var(--white);
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+}
+#formStartscreen #usernameInput::placeholder
+{
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+    font-size: 0.8rem;
+}
+#formStartscreen button
+{
+    display: block;
+    border: none;
+    margin: 25px auto;
+    padding: 10px 15px;
+}
+
+
+/* form quistions */
+#formContainer #fquestions
+{
+    position: relative;
+    left: 0;
+    min-height: 240px;
+    width: 100%;
+    overflow: hidden;
+}
+#formContainer #fquestions > #studietestForm
+{
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: left 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+#formContainer .question
+{
+    position: relative;
+    min-width: 101%;
+    height: auto;
+    min-height: 240px;
+}
+.question h3
+{
+    margin: 5px 0 15px 0;
+}
+.question > div
+{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.question .answers input
+{
+    height: 20px;
+    width: 20px;
+    margin: 5px 0 20px 0;
+    cursor: pointer;
+}
+.question .answers label
+{
+    position: relative;
+    top: -3px;
+    padding: 5px 0 5px 5px;
+    margin: 5px 0 20px 0;
+    cursor: pointer;
+    font-size: clamp(0.8rem, 0.5em + 1.5vw, 1.1rem);
+}
+.question .image img
+{
+    width: auto;
+    max-width: 350px;
+    height: auto;
+    max-height: 230px;
+}
+.question figcaption
+{
+    font-size: 0.8rem;
+}
+
 /* form buttons */
 #formContainer #fbuttons
 {
@@ -108,7 +214,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0;
+    padding: 20px 0;
 }
 #fbuttons #prevBtn
 {
@@ -123,8 +229,7 @@
     outline: none;
     transition: 150ms linear;
 }
-#fbuttons #prevBtn:hover,
-#fbuttons #prevBtn:focus
+#fbuttons #prevBtn:hover
 {
     border: 2px solid #000;
 }
@@ -132,22 +237,23 @@
 {
     width: 30px;
     height: auto;
+    padding: 1px;
     pointer-events: none;
 }
 #fbuttons #nextBtn
 {
     border: 2px solid var(--red);
-    width: 150px;
+    width: 165px;
     height: 45px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     outline: none;
-    transition: 150ms linear;
+    transition: background-color 150ms linear;
     background-color: transparent;
+    font-size: 1em;
 }
-#fbuttons #nextBtn:hover,
-#fbuttons #nextBtn:focus
+#fbuttons #nextBtn:hover
 {
     background-color: var(--red);
 }
@@ -156,11 +262,30 @@
     width: 30px;
     height: auto;
     pointer-events: none;
+    transform: none;
+    transition: transform 0.3s linear;
+}
+#fbuttons #nextBtn:hover img
+{
+    animation: animArrow 1s linear forwards infinite;
+}
+@keyframes animArrow
+{
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(10px);
+    }
+    100%{
+        transform: translate(0);
+    }
 }
 
 /* form footer */
 #formContainer #ffooter
 {
+    margin-top: 10px;
     width: 100%;
     height: 50px;
     display: flex;

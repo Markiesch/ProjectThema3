@@ -68,7 +68,7 @@
                         <h3 id="counter">Studiekeuze test</h3>
                         <img src="../images/kw1c-logo.svg" alt="logo">
                     </div>
-                   <!-- <div id="formStartscreen">
+                    <div id="formStartscreen">
                         <h3>
                             <?php
                                 function TimeGreeting()
@@ -89,72 +89,91 @@
                                     }
                                     return $msg;
                                 }
-                                echo TimeGreeting();
+                                if(isset($_COOKIE["username"]))
+                                {
+                                    $username = $_COOKIE["username"] . ",";
+                                }
+                                else
+                                {
+                                    $username = ",";
+                                }
+
+                                echo TimeGreeting() . " " . $username;
+
                             ?>
                         </h3>
                         <p>
                             Wil jij graag weten of een van de ict opleidingen bij jou past? Doe dan nu de studietest!<br>
-                            Door middel van deze test kun jij er achter komen welke opleiding het beste bij jou past.<br>
-                            Heb je nog geen idee welke MBO opleiding je wilt doen? Of twijfel je misschien nog tussen een paar opleidingen?<br>
-                            Dan is dit de perfecte test! Vul hem eerlijk in, het is voor jezelf en je wilt wel een passende uitslag natuurlijk ;)<br>
-                            Lees hier boven hoe het werkt en start de test!
+                            Heb je nog geen idee of twijfel je nog welke MBO opleiding je wilt doen?
+                            Dan is dit de perfecte test!<br>
+                            Vul hem eerlijk in zodat je een correcte uitslag krijgt &#128540;<br>
+                            Vul je naam in en start de test!
                         </p>
-                    </div>-->
+                        <?php
+                            if(isset($_COOKIE["username"]) == false)
+                            {
+                                echo "<input type='text' name='username' id='usernameInput' placeholder='Vul hier je voor- en achternaam in'>
+                                <button class='btn' onclick='startTestAddCookie()'>
+                                    <span>Start de studiekeuze test</span>
+                                </button>";
+                            }
+                            else
+                            {
+                                echo "<br><br><button class='btn' onclick='startStudieTest()'>
+                                    <span>Start de studiekeuze test</span>
+                                </button>";
+                            }
+                        ?>
+                    </div>
                     <div id="fquestions">
-                        <form action="resultaat.php" method="post">
-                            <div class="quistion" id="q1">
+                        <form action="resultaat.php" method="post" id="studietestForm">
+                            <div class="question" id="q1">
                                 <h3>Vraag 1: Ben je meer geïnteresseerd in Hardware of in Software?</h3>
-                                <div class="answers">
-                                    <input type="radio" name="quist1" value="1a" id="1a">
-                                    <label for="1a">A. Antwoord a</label><br>
-                                    <input type="radio" name="quist1" value="1b" id="1b">
-                                    <label for="1b">B. Antwoord b</label><br>
-                                    <input type="radio" name="quist1" value="1c" id="1c">
-                                    <label for="1c">C. Antwoord c</label><br>
-                                    <input type="radio" name="quist1" value="1d" id="1d">
-                                    <label for="1d">D. Antwoord d</label><br>
-                                </div>
-                                <div class="image">
-                                    <!--<img src="" alt="" title="">-->
+                                <div>
+                                    <div class="answers">
+                                        <input type="radio" name="quest1" value="1a" id="1a">
+                                        <label for="1a">A. Antwoord a staat hierzo mooi</label><br>
+                                        <input type="radio" name="quest1" value="1b" id="1b">
+                                        <label for="1b">B. Antwoord b staat dan hier onder top</label><br>
+                                        <input type="radio" name="quest1" value="1c" id="1c">
+                                        <label for="1c">C. Antwoord c tja deze staat er ook nog en dan</label><br>
+                                        <input type="radio" name="quest1" value="1d" id="1d">
+                                        <label for="1d">D. Antwoord d helemaal onderaan </label><br>
+                                    </div>
+                                    <div class="image">
+                                        <figure>
+                                            <img src="../images/background.jpg" alt="test" title="test">
+                                            <figcaption>Voorbeeld afbeelding</figcaption>
+                                        </figure>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="quistion" id="q2">
+                            <div class="question" id="q2">
                                 <h3>Vraag 2: ...</h3>
-                                <div class="answers">
-                                    <input type="radio" name="quist2" value="2a" id="2a">
-                                    <label for="2a">A. Antwoord a</label><br>
-                                    <input type="radio" name="quist2" value="2b" id="2b">
-                                    <label for="2b">B. Antwoord b</label><br>
-                                    <input type="radio" name="quist2" value="2c" id="2c">
-                                    <label for="2c">C. Antwoord c</label><br>
-                                    <input type="radio" name="quist2" value="2d" id="2d">
-                                    <label for="2d">D. Antwoord d</label><br>
-                                </div>
-                                <div class="image">
-                                    <!--<img src="" alt="" title="">-->
-                                </div>
-                            </div>
-                            <div class="quistion" id="q3">
-                                <h3>Vraag 3: ...</h3>
-                                <div class="answers">
-                                    <input type="radio" name="quist3" value="3a" id="3a">
-                                    <label for="3a">A. Antwoord a</label><br>
-                                    <input type="radio" name="quist3" value="3b" id="3b">
-                                    <label for="3b">B. Antwoord b</label><br>
-                                    <input type="radio" name="quist3" value="3c" id="3c">
-                                    <label for="3c">C. Antwoord c</label><br>
-                                    <input type="radio" name="quist3" value="3d" id="3d">
-                                    <label for="3d">D. Antwoord d</label><br>
-                                </div>
-                                <div class="image">
-                                    <!--<img src="" alt="" title="">-->
+                                <div>
+                                    <div class="answers">
+                                        <input type="radio" name="quest2" value="2a" id="2a">
+                                        <label for="2a">A. Antwoord a</label><br>
+                                        <input type="radio" name="quest2" value="2b" id="2b">
+                                        <label for="2b">B. Antwoord b</label><br>
+                                        <input type="radio" name="quest2" value="2c" id="2c">
+                                        <label for="2c">C. Antwoord c</label><br>
+                                        <input type="radio" name="quest2" value="2d" id="2d">
+                                        <label for="2d">D. Antwoord d</label><br>
+                                    </div>
+                                    <div class="image">
+                                        <figure>
+                                            <img src="../images/background.jpg" alt="test" title="test" height="auto" width="350px">
+                                            <figcaption>Voorbeeld afbeelding</figcaption>
+                                        </figure>
+                                    </div>
                                 </div>
                             </div>
                         </form>
                     </div>
                     <div id="fbuttons">
                         <button class="btn" id="prevBtn">
-                            <img src="../images/left-arrow.svg" alt="<--">
+                            <img src="../images/left-arrow.svg" alt="prev">
                         </button>
                         <button class="btn" id="nextBtn">
                             <span>Volgende</span>

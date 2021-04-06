@@ -10,6 +10,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/stylesheet.css">
+        <link rel="stylesheet" href="styles/index.css">
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <script src="scripts/script.js" defer></script>
         <title>ICT-Academie - Koning Willem I College</title>
@@ -28,8 +29,18 @@
             </section>
             <div class="streep"></div>
             <section>
-                <div></div>
-                <div></div>
+                <div>
+                    <div>
+                        <h2>Algemeen</h2>
+                        <p>
+                            Een goede ICT’er is gedreven om te leren en is bereid om kennis te delen met anderen. Dat vinden ze bij het bedrijfsleven. 
+                            Verder moet je wat willen bereiken, plezier hebben in wat je doet en goed in een team kunnen werken. 
+                            Tijdens je studie aan de ICT-Academie krijg je hiermee te maken. Dat gebeurt zoveel mogelijk in projectvormen: 
+                            leren werken en werkend leren in klein groepsverband, met opdrachten uit de praktijk. Teamwork dus. Belangrijk is verder de adviesraad, 
+                            die bestaat uit vertegenwoordigers van vooraanstaande bedrijven uit de regio.
+                        </p>
+                    </div>
+                </div>
             </section>
         </main>
         <?php

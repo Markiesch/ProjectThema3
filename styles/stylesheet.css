@@ -531,10 +531,29 @@ footer {
     top: 0;
     left: 0;
     width: 100%;
-    height: 4.5em;
+    height: 4em;
     background-color: var(--blue);
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
+    display: flex;    
 }
+
+.logosize
+{
+    width: 30px;
+    margin: 6px;
+    float: left;
+}
+
+#socialslogo
+{
+    position: relative;
+    left: 79%;
+}
+
+#privacyverklaring
+{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+

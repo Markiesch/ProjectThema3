@@ -5,6 +5,7 @@
     Javascript formulier page
  */
 
+//functie om cookie toe te voegen met username
 function startTestAddCookie()
 {
     var username = document.getElementById("usernameInput").value;
@@ -14,4 +15,15 @@ function startTestAddCookie()
 function startStudieTest()
 {
     document.getElementById("formStartscreen").style.display = "none";
+}
+
+
+
+function prevQuestion()
+{
+    console.log("prev");
+}
+function nextQuestion()
+{
+    console.log("next");
 }

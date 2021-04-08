@@ -60,7 +60,10 @@ h3 {
     /*font-size: 1rem;*/
 }
 
-p, a, li, span {
+p,
+a,
+li,
+span {
     font-size: clamp(0.8rem, 0.5em + 1.5vw, 1.1rem);
 }
 
@@ -91,6 +94,7 @@ main a.btn {
     background-position: center center;
     filter: brightness(0.85);
 }
+
 .banner::before {
     background-image: url("../images/bannerred.png");
 }
@@ -106,7 +110,8 @@ main a.btn {
     animation: 300ms fadein ease;
 }
 
-.intro a.btn, .btn {
+.intro a.btn,
+.btn {
     background-color: var(--red);
     color: white;
     padding: 0.5em 1em;
@@ -132,6 +137,11 @@ main a.btn {
     background-color: white;
     height: 12px;
     background-image: url("../images/lijn.png");
+}
+
+section:not(.intro) {
+    width: 70%;
+    margin: 0 auto;
 }
 
 @keyframes fadein {
@@ -238,7 +248,7 @@ header .logo {
     transform: translate(0, -50%);
 }
 
-#studietest:hover .newMenuItem{
+#studietest:hover .newMenuItem {
     transform: rotate(5deg);
 }
 #studietestMobile:hover .newMenuItemMobile {
@@ -517,13 +527,11 @@ header .logo {
     }
 }
 
-
 /*
 =======================
     Footer Styling
 =======================
 */
-
 
 footer {
     position: relative;
@@ -539,26 +547,22 @@ footer {
     padding: 0 20px;
 }
 
-.logosize
-{
+.logosize {
     width: 30px;
     margin: 6px;
     float: left;
     transition: transform 100ms linear;
 }
-.logosize:hover
-{
+.logosize:hover {
     transform: rotateZ(5deg);
 }
 
-#privacyverklaring
-{
+#privacyverklaring {
     text-decoration: none;
     color: white;
     font-size: 12px;
 }
 
-#privacyverklaring:hover
-{
+#privacyverklaring:hover {
     text-decoration: underline;
 }

@@ -101,7 +101,6 @@
                                 echo TimeGreeting() . " " . $username;
 
                             ?>
-                            <!-- kaasje -->
                         </h3>
                         <p>
                             Wil jij graag weten of een van de ict opleidingen bij jou past? Doe dan nu de studietest!<br>

@@ -1,3 +1,4 @@
+<div class="streep"></div>
 <footer>
     <a href="/privacyverklaring" title="Privacyverklaring van het Koning Willem I College" id="privacyverklaring">Privacyverklaring</a>
     <div id="socialslogo">

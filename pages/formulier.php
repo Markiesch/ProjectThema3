@@ -132,14 +132,16 @@
                                 <h3>Vraag 1: Ben je meer geïnteresseerd in Hardware of in Software?</h3>
                                 <div>
                                     <div class="answers">
-                                        <input type="radio" name="quest1" value="a1" id="a1" required>
+                                        <input type="radio" name="quest1" value="5,0,10" id="a1" required>
                                         <label for="a1">A. Hardware</label><br>
-                                        <input type="radio" name="quest1" value="b1" id="b1" required>
+                                        <input type="radio" name="quest1" value="b1" id="b1" >
                                         <label for="b1">B. Software</label><br>
-                                        <input type="radio" name="quest1" value="c1" id="c1" required>
+                                        <input type="radio" name="quest1" value="c1" id="c1" >
                                         <label for="c1">C. Allebei</label><br>
-                                        <input type="radio" name="quest1" value="d1" id="d1" required>
+                                        <input type="radio" name="quest1" value="d1" id="d1" >
                                         <label for="d1">D. Geen van beide</label><br>
+
+                                        <input type="submit">
                                     </div>
                                     <div class="image">
                                         <figure>
@@ -149,7 +151,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="question" id="q2">
+                         <div class="question" id="q2">
                                 <h3>Vraag 2: Heb je ervaring met programmeren?</h3>
                                 <div>
                                     <div class="answers">

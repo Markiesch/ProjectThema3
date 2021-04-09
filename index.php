@@ -28,7 +28,7 @@
                 </div>
             </section>
             <div class="streep"></div>
-            <section>
+            <section class="information--section">
                 <div>
                     <div>
                         <h2>Algemeen</h2>
@@ -39,6 +39,23 @@
                             leren werken en werkend leren in klein groepsverband, met opdrachten uit de praktijk. Teamwork dus. Belangrijk is verder de adviesraad, 
                             die bestaat uit vertegenwoordigers van vooraanstaande bedrijven uit de regio.
                         </p>
+                    </div>
+                    <div>
+                        <h2>Algemeen</h2>
+                        <p>
+                            Een goede ICT’er is gedreven om te leren en is bereid om kennis te delen met anderen. Dat vinden ze bij het bedrijfsleven. 
+                            Verder moet je wat willen bereiken, plezier hebben in wat je doet en goed in een team kunnen werken. 
+                            Tijdens je studie aan de ICT-Academie krijg je hiermee te maken. Dat gebeurt zoveel mogelijk in projectvormen: 
+                            leren werken en werkend leren in klein groepsverband, met opdrachten uit de praktijk. Teamwork dus. Belangrijk is verder de adviesraad, 
+                            die bestaat uit vertegenwoordigers van vooraanstaande bedrijven uit de regio.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2>Informatie</h2>
+                        <p>Download de brochure van deze afdeling:</p>
+                        <a href="https://www.kw1c.nl/media/afdeling/folders/811-ict-academie.pdf">Brochure in PDF</a>
                     </div>
                 </div>
             </section>

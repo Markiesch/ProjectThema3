@@ -165,7 +165,7 @@
 #formContainer .question
 {
     position: relative;
-    min-width: 101%;
+    min-width: 100%;
     height: auto;
     min-height: 240px;
 }
@@ -219,6 +219,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    opacity: 0;
+    pointer-events: none;
 }
 #fbuttons #prevBtn
 {
@@ -233,7 +235,8 @@
     outline: none;
     transition: 150ms linear;
 }
-#fbuttons #prevBtn:hover
+#fbuttons #prevBtn:hover,
+#fbuttons #prevBtn:focus
 {
     border: 2px solid #000;
 }
@@ -260,6 +263,10 @@
 #fbuttons #nextBtn:hover
 {
     background-color: var(--red);
+}
+#fbuttons #nextBtn:focus
+{
+    border: 4px solid var(--red);
 }
 #fbuttons #nextBtn img
 {
@@ -308,9 +315,6 @@
 {
     text-decoration: underline;
 }
-
-
-
 
 /* -- responsive on mobile -- */
 @media screen and (max-width: 960px)

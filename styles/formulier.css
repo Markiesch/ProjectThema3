@@ -142,9 +142,8 @@
     display: block;
     border: none;
     margin: 25px auto;
-    padding: 10px 15px;
+    padding: 15px 20px;
 }
-
 
 /* form quistions */
 #formContainer #fquestions
@@ -177,7 +176,7 @@
 {
     display: flex;
     justify-content: space-between;
-    padding-right: 20px;
+    padding: 0 20px 0 5px;
 }
 .question .answers input
 {
@@ -210,6 +209,21 @@
 {
     font-size: 0.8rem;
 }
+#endScreen
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+#endScreen > .btn
+{
+    display: block;
+    border: none;
+    margin: 25px auto;
+    padding: 13px 30px;
+}
 
 /* form buttons */
 #formContainer #fbuttons
@@ -218,7 +232,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding-bottom: 20px;
     opacity: 0;
     pointer-events: none;
 }
@@ -266,7 +280,7 @@
 }
 #fbuttons #nextBtn:focus
 {
-    border: 4px solid var(--red);
+    border: 3px solid var(--red);
 }
 #fbuttons #nextBtn img
 {

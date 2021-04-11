@@ -140,7 +140,8 @@ main a.btn {
 }
 
 section:not(.intro) {
-    width: 70%;
+    min-width: 70%;
+    max-width: 800px;
     margin: 0 auto;
 }
 

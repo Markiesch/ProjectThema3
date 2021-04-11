@@ -1,3 +1,8 @@
+/* 
+    Author: Mark Schuurmans
+    Date: 6-4-2021
+    File: styles/index.css
+*/
 :root {
     --blue: #0085ca;
     --light-blue: #66b6df;
@@ -5,15 +10,144 @@
     --white: #ffffff;
 }
 
-.information--section {
-    display: grid;
-    padding-top: 5em;
-    grid-gap: 1em;
-    grid-template-columns: minmax(400px, 3fr) minmax(200px, 2fr);
+p,
+a,
+li {
+    font-size: 14px;
+    line-height: 1.5;
 }
 
-.information--section div div {
+li a {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+h3 {
+    margin-bottom: 0.5em;
+}
+
+.information--section {
+    padding-top: 5em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container--left {
+    flex: 1 1 600px;
+}
+
+.container--right {
+    flex: 1 1 300px;
+}
+
+.information--section > div > div {
     background-color: var(--blue);
     padding: 1em;
-    margin-bottom: 2em;
+    margin: 0.5em 0.25em;
+}
+
+.iframe--container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* Standaard YouTube video aspect ratio is 16:9 (9 / 16 = 0.5625) */
+}
+
+.iframe--container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.brochure--container p {
+    margin: 1em 0;
+}
+
+.brochure--container img {
+    height: 16px;
+    margin-right: 0.5em;
+}
+
+.brochure--container a {
+    background-color: var(--red);
+    color: white;
+    padding: 0.5em;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact--container img {
+    height: 16px;
+    margin-right: 0.5em;
+}
+
+/* Draait het element om */
+.contact--container img:first-of-type {
+    transform: scaleX(-1);
+}
+
+.contact--container a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.contact--container a:hover,
+.contact--container a:focus {
+    text-decoration: underline;
+}
+
+.information--section > div > div.links--container {
+    background-color: var(--red);
+}
+
+.links--container li {
+    list-style-type: none;
+}
+
+.links--container a {
+    text-decoration: underline;
+    color: var(--white);
+}
+
+.links--container img {
+    height: 19px;
+    margin-right: 1em;
+}
+
+.information--section > div > div.studies--container {
+    background-color: var(--white);
+    padding-bottom: 2em;
+}
+
+.studies--container h3,
+.studies--container h4 {
+    color: var(--blue);
+}
+
+.studies--container h4 {
+    font-size: 19px;
+    margin: 1em 0;
+}
+
+.studies--container a,
+.studies--container span {
+    font-size: 14px;
+}
+
+.studies--container a {
+    color: var(--red);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.studies--container img {
+    height: 14px;
+    margin: 0 0.5em 0 1em;
+}
+
+.studies--container span {
+    color: black;
 }

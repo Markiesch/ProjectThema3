@@ -3,7 +3,7 @@
     Aanmaakdatum: 2-4-2021
 
     Javascript formulier page
- */
+*/
 
 //form beginnen en cookie instellen
 function startTestAddCookie()

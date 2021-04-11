@@ -1,3 +1,10 @@
+/*
+    Auteur: Pepijn Emmers
+    Aanmaakdatum: 2-4-2021
+
+    Javascript formulier page
+*/
+
 //variable aanmaken
 var hamburger = document.getElementById("hamburger");
 var slideMenu = document.getElementById("slideMenu");

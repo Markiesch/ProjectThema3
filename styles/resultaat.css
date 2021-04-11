@@ -1,5 +1,10 @@
-p a
-{
+/* 
+    Author: Tobi de Fijter
+    Date: 4-4-2021
+    File: styles/resultaat.css
+*/
+
+p a {
     color: white;
     text-decoration: none;
 }
@@ -17,13 +22,13 @@ p a
     margin-bottom: 2em;
 }
 
-.result--section {  
+.result--section {
     position: relative;
     top: -50px;
     padding-top: 5em;
     grid-gap: 1em;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .result--section div {
@@ -31,15 +36,12 @@ p a
     margin-bottom: 2em;
 }
 
-
-.resultCard
-{
-    background-color: #0085ca; 
-    color: #fff;  
+.resultCard {
+    background-color: #0085ca;
+    color: #fff;
     border-radius: 10px;
 }
-.cardBgPosition
-{
+.cardBgPosition {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -49,41 +51,32 @@ p a
     border-top-right-radius: 10px;
 }
 
-#cardBgsoft
-{
+#cardBgsoft {
     background-image: url("../images/softdev.jpg");
 }
-#cardBgict
-{
+#cardBgict {
     background-image: url("../images/ictbeheer.jpg");
 }
-#cardBgsystem
-{
+#cardBgsystem {
     background-image: url("../images/systemanddevices.jpg");
 }
 
-
-.cardContent
-{
+.cardContent {
     padding-left: 1em;
     padding-right: 1em;
 }
-.cardContent h3
-{
+.cardContent h3 {
     margin: 5px 0;
 }
-.cardContent p:first-of-type
-{
+.cardContent p:first-of-type {
     margin: 5px 0;
     font-style: italic;
     font-size: 0.9em;
 }
-.cardContent p
-{
+.cardContent p {
     margin: 10px 0;
 }
-.cardContent a
-{
+.cardContent a {
     display: block;
     text-align: end;
     margin: 5px 0;
@@ -91,20 +84,16 @@ p a
     font-style: italic;
 }
 
-#aligntelephone
-{
+#aligntelephone {
     position: relative;
     top: -30px;
 }
 
-.toelichting
-{
+.toelichting {
     font-size: 0.7em;
 }
 
-
-#contact
-{
+#contact {
     background-color: var(--blue);
     height: auto;
     padding: 7px 10px;
@@ -112,69 +101,57 @@ p a
 }
 
 /* contact blok */
-#contact
-{
+#contact {
     width: 25%;
     min-width: 300px;
 }
-#contact img
-{
+#contact img {
     width: 18px;
     height: auto;
 }
-#contact > div
-{
+#contact > div {
     padding: 5px;
     display: flex;
     align-items: center;
 }
-#contact a
-{
+#contact a {
     color: #fff;
     text-decoration: none;
     display: inline-block;
     padding: 0 10px;
 }
-#contact a:hover
-{
+#contact a:hover {
     text-decoration: underline;
 }
 
 /* -- responsive on mobile -- */
-@media screen and (max-width: 960px)
-{
-    #contact
-    {
+@media screen and (max-width: 960px) {
+    #contact {
         width: 100%;
         min-width: 225px;
     }
-    
+
     .information--section {
         grid-template-columns: 1fr;
     }
 
-    .result--section {  
-        grid-template-columns: 1fr; 
+    .result--section {
+        grid-template-columns: 1fr;
     }
-    
-    #contact
-    {
+
+    #contact {
         padding: 7px 10px;
-        margin: 0 ;
+        margin: 0;
     }
 }
-@media screen and (max-width: 800px)
-{
-    #contact
-    {
+@media screen and (max-width: 800px) {
+    #contact {
         width: 100%;
         min-width: auto;
     }
 }
-@media screen and (max-width: 400px)
-{
-    #contact
-    {
+@media screen and (max-width: 400px) {
+    #contact {
         width: 100%;
     }
 }

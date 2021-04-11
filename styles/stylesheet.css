@@ -535,17 +535,18 @@ header .logo {
 */
 
 footer {
-    position: relative;
-    z-index: 40;
-    top: 0;
-    left: 0;
     width: 100%;
-    min-height: 4em;
+}
+
+.footer--container {
+    z-index: 40;
+    width: 100%;
     background-color: var(--blue);
+    padding: 0 20px;
+    min-height: 4em;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
 }
 
 .logosize {

@@ -64,7 +64,7 @@
                             Ipsum has been the industry's standard 
                             dummy text ever since the 1500s
                             </p>
-                            <a href="#">Lees meer</a>
+                            <a href="https://www.kw1c.nl/opleiding/25604o10/software-developer-bol" target="_blank">Lees meer</a>
                         </div>
                     </div> 
                     <div class="resultCard">
@@ -78,7 +78,7 @@
                             Ipsum has been the industry's standard 
                             dummy text ever since the 1500s
                             </p>
-                            <a href="#">Lees meer</a>
+                            <a href="https://www.kw1c.nl/opleiding/25606o10/expert-it-systems-and-devices-bol" target="_blank">Lees meer</a>
                         </div>
                     </div> 
                     <div class="resultCard">
@@ -92,7 +92,7 @@
                             Ipsum has been the industry's standard 
                             dummy text ever since the 1500s
                             </p>
-                            <a href="#">Lees meer</a>
+                            <a href="https://www.kw1c.nl/opleiding/25605o10/allround-medewerker-it-systems-and-devices-bol" target="_blank">Lees meer</a>
                         </div>
                     </div> 
             </section>

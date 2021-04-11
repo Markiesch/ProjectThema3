@@ -143,8 +143,8 @@
                                     </div>
                                     <div class="image">
                                         <figure>
-                                            <img src="../images/background.jpg" alt="test" title="test">
-                                            <figcaption>Voorbeeld afbeelding</figcaption>
+                                            <img src="../images/question-images/01.png" alt="">
+                                            <figcaption>Hardware of Software?</figcaption>
                                         </figure>
                                     </div>
                                 </div>
@@ -162,10 +162,10 @@
                                         <input type="radio" name="quest2" value="0,-5,-5" id="d2" tabindex="-1">
                                         <label for="d2">D. Nee, lijkt me ook niet leuk</label><br>
                                     </div>
-                                    <div class="image noImage">
-                                        <figure>
-                                            <img src="" alt="" title="">
-                                            <figcaption></figcaption>
+                                    <div class="image">
+                                    <figure>
+                                            <img src="../images/question-images/02.png" alt="">
+                                            <figcaption>Programmeren</figcaption>
                                         </figure>
                                     </div>
                                 </div>
@@ -183,10 +183,10 @@
                                         <input type="radio" name="quest3" value="-5,0,0" id="d3" tabindex="-1">
                                         <label for="d3">D. Nee, lijkt me ook niet leuk</label><br>
                                     </div>
-                                    <div class="image noImage">
-                                        <figure>
-                                            <img src="" alt="" title="">
-                                            <figcaption></figcaption>
+                                    <div class="image">
+                                    <figure>
+                                            <img src="../images/question-images/03.png" alt="">
+                                            <figcaption>Server</figcaption>
                                         </figure>
                                     </div>
                                 </div>
@@ -204,12 +204,6 @@
                                         <input type="radio" name="quest4" value="0,-5,-5" id="d4" tabindex="-1">
                                         <label for="d4">D. Weet ik niet</label><br>
                                     </div>
-                                    <div class="image noImage">
-                                        <figure>
-                                            <img src="" alt="" title="">
-                                            <figcaption></figcaption>
-                                        </figure>
-                                    </div>
                                 </div>
                             </div>
                             <div class="question" id="q5">
@@ -225,10 +219,10 @@
                                         <input type="radio" name="quest5" value="0,-5,-10" id="d5" tabindex="-1">
                                         <label for="d5">D. Ik weet er niet veel van en lijkt me niet zo leuk in </label><br>
                                     </div>
-                                    <div class="image noImage">
-                                        <figure>
-                                            <img src="" alt="" title="">
-                                            <figcaption></figcaption>
+                                    <div class="image">
+                                    <figure>
+                                            <img src="../images/question-images/05.png" alt="">
+                                            <figcaption>Netwerk</figcaption>
                                         </figure>
                                     </div>
                                 </div>
@@ -246,12 +240,6 @@
                                         <input type="radio" name="quest6" value="0,-5,-5" id="d6" tabindex="-1">
                                         <label for="d6">D. Lijkt me niks aan </label><br>
                                     </div>
-                                    <div class="image noImage">
-                                        <figure>
-                                            <img src="" alt="" title="">
-                                            <figcaption></figcaption>
-                                        </figure>
-                                    </div>
                                 </div>
                             </div>
                             <div class="question" id="q7">
@@ -267,10 +255,10 @@
                                         <input type="radio" name="quest7" value="-5,10,-5" id="d7" tabindex="-1">
                                         <label for="d7">D. Nee</label><br>
                                     </div>
-                                    <div class="image noImage">
-                                        <figure>
-                                            <img src="" alt="" title="">
-                                            <figcaption></figcaption>
+                                    <div class="image">
+                                    <figure>
+                                            <img src="../images/question-images/07.png" alt="">
+                                            <figcaption>Oplossingsgericht</figcaption>
                                         </figure>
                                     </div>
                                 </div>
@@ -288,12 +276,6 @@
                                         <input type="radio" name="quest8" value="-5,-10,-5" id="d8" tabindex="-1">
                                         <label for="d8">D. Nee ik praat niet zo graag met (onbekende) mensen</label><br>
                                     </div>
-                                    <div class="image noImage">
-                                        <figure>
-                                            <img src="" alt="" title="">
-                                            <figcaption></figcaption>
-                                        </figure>
-                                    </div>
                                 </div>
                             </div>
                             <div class="question" id="q9">
@@ -308,12 +290,6 @@
                                         <label for="c9">C. Nee maar daar wil ik aan werken</label><br>
                                         <input type="radio" name="quest9" value="-5,-10,-5" id="d9" tabindex="-1">
                                         <label for="d9">D. Nee maar dat vind ik ook niet leuk om te doen</label><br>
-                                    </div>
-                                    <div class="image noImage">
-                                        <figure>
-                                            <img src="" alt="" title="">
-                                            <figcaption></figcaption>
-                                        </figure>
                                     </div>
                                 </div>
                             </div>
@@ -330,10 +306,10 @@
                                         <input type="radio" name="quest10" value="0,-5,0" id="d10" tabindex="-1">
                                         <label for="d10">D. Nee ik werk liever alleen</label><br>
                                     </div>
-                                    <div class="image noImage">
-                                        <figure>
-                                            <img src="" alt="" title="">
-                                            <figcaption></figcaption>
+                                    <div class="image">
+                                    <figure>
+                                            <img src="../images/question-images/10.png" alt="">
+                                            <figcaption>Teamwork</figcaption>
                                         </figure>
                                     </div>
                                 </div>
@@ -351,12 +327,6 @@
                                         <input type="radio" name="quest11" value="-5,-5,-5" id="d11" tabindex="-1">
                                         <label for="d11">D. Nee ik kan niet goed luisteren (en ben snel afgeleid  een gesprek)</label><br>
                                     </div>
-                                    <div class="image noImage">
-                                        <figure>
-                                            <img src="" alt="" title="">
-                                            <figcaption></figcaption>
-                                        </figure>
-                                    </div>
                                 </div>
                             </div>
                             <div class="question" id="q12">
@@ -372,10 +342,10 @@
                                         <input type="radio" name="quest12" value="-5,0,0" id="d12" tabindex="-1">
                                         <label for="d12">D. Nee ik ben snel afgeleid</label><br>
                                     </div>
-                                    <div class="image noImage">
-                                        <figure>
-                                            <img src="" alt="" title="">
-                                            <figcaption></figcaption>
+                                    <div class="image">
+                                    <figure>
+                                            <img src="../images/question-images/12.png" alt="">
+                                            <figcaption>Concentreren</figcaption>
                                         </figure>
                                     </div>
                                 </div>
@@ -393,10 +363,10 @@
                                         <input type="radio" name="quest13" value="-5,-5,-5" id="d13" tabindex="-1">
                                         <label for="d13">D. Nee beide niet</label><br>
                                     </div>
-                                    <div class="image noImage">
-                                        <figure>
-                                            <img src="" alt="" title="">
-                                            <figcaption></figcaption>
+                                    <div class="image">
+                                    <figure>
+                                            <img src="../images/question-images/13.png" alt="">
+                                            <figcaption>Kennis delen</figcaption>
                                         </figure>
                                     </div>
                                 </div>
@@ -414,10 +384,10 @@
                                         <input type="radio" name="quest14" value="10,5,5" id="d14" tabindex="-1">
                                         <label for="d14">D. Fouten maken is juist goed! Je kunt er van leren en jezelf verbeteren</label><br>
                                     </div>
-                                    <div class="image noImage">
-                                        <figure>
-                                            <img src="" alt="" title="">
-                                            <figcaption></figcaption>
+                                    <div class="image">
+                                    <figure>
+                                            <img src="../images/question-images/14.png" alt="">
+                                            <figcaption>Leer van je fouten</figcaption>
                                         </figure>
                                     </div>
                                 </div>
@@ -425,7 +395,7 @@
                             <div id="endScreen" class="question">
                                 <h3>Wil je de antwoorden versturen?</h3>
                                 <p>Als een vraag niet ingevult is, kan dit het resultaat beïnvloeden!</p>
-                                <button type="submit" class="btn">
+                                <button type="submit" class="btn" tabindex="-1">
                                     <span>Bekijk resultaat</span>
                                 </button>
                             </div>

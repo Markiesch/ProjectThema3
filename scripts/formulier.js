@@ -94,5 +94,6 @@ function changeQuestion(activeQuestion)
         questions.style.left = "-1300%";
     } else if (activeQuestion == 15) {
         questions.style.left = "-1400%";
+        nextBtn.style.display = "none";
     }
 }

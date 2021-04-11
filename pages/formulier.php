@@ -65,7 +65,7 @@
             <section id="studietest">
                 <div id="formContainer">
                     <div id="fheader">
-                        <h3 id="counter">Studiekeuze test</h3>
+                        <h3>Studiekeuze test</h3>
                         <img src="../images/logo.svg" alt="logo">
                     </div>
                     <!-- form startscreen -->
@@ -222,7 +222,7 @@
                                     <div class="image">
                                     <figure>
                                             <img src="../images/question-images/05.png" alt="">
-                                            <figcaption>Netwerk</figcaption>
+                                            <figcaption></figcaption>
                                         </figure>
                                     </div>
                                 </div>
@@ -383,12 +383,6 @@
                                         <label for="c14">C. Iedereen maakt fouten, als ik er maar van leer!</label><br>
                                         <input type="radio" name="quest14" value="10,5,5" id="d14" tabindex="-1">
                                         <label for="d14">D. Fouten maken is juist goed! Je kunt er van leren en jezelf verbeteren</label><br>
-                                    </div>
-                                    <div class="image">
-                                    <figure>
-                                            <img src="../images/question-images/14.png" alt="">
-                                            <figcaption>Leer van je fouten</figcaption>
-                                        </figure>
                                     </div>
                                 </div>
                             </div>

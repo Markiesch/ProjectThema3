@@ -189,6 +189,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding-top: 25px;
 }
 #endScreen > .btn {
@@ -293,7 +294,8 @@
 /* -- responsive -- */
 @media screen and (max-width: 1000px) {
     #formContainer {
-        margin: 50px 20px;
+        margin: 50px auto;
+        max-width: 95%;
     }
 }
 @media screen and (max-width: 960px) {
@@ -332,5 +334,21 @@
     }
     #contact {
         width: 95%;
+    }
+    #fheader img {
+        width: 60px;
+        height: 60px;
+    }
+    #formContainer .question {
+        height: 465px;
+    }
+    .question .answers input {
+        margin: 5px 0 10px 0;
+    }
+    .question .image img {
+        min-width: auto;
+        max-width: 100%;
+        min-height: auto;
+        max-height: auto;
     }
 }

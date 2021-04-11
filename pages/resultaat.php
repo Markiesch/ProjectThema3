@@ -25,7 +25,6 @@
                 <div>
                     <h1>ICT-ACADEMIE</h1>
                     <h2>De toekomst in jouw handen</h2>
-                    <a href="">Studiekeuzetest</a>
                 </div>
             </section>
             <div class="streep"></div>

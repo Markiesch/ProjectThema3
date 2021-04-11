@@ -81,11 +81,12 @@
     width: 100%;
     margin: 0 auto;
 }
-#studietest #formContainer
+#formContainer
 {
     position: relative;
     background-color: var(--blue);
-    width: 930px;
+    min-width: 70%;
+    max-width: 930px;
     min-height: 480px;
     margin: 50px auto;
     padding: 10px 20px;
@@ -104,10 +105,11 @@
 /* form startscherm */
 #formStartscreen
 {
-    position: absolute;
+    position: relative;
     z-index: 20;
     min-height: 355px;
-    width: 900px;
+    min-width: 100%;
+    max-width: 900px;
     background-color: var(--blue);
     padding: 5px 0;
 }
@@ -153,6 +155,7 @@
     min-height: 240px;
     width: 100%;
     overflow: hidden;
+    display: none;
 }
 #formContainer #fquestions > #studietestForm
 {
@@ -196,14 +199,10 @@
 }
 .question .image img
 {
-    width: auto;
+    min-width: auto;
     max-width: 350px;
-    height: auto;
+    min-height: auto;
     max-height: 230px;
-}
-.question .noImage
-{
-    display: none;
 }
 .question figcaption
 {
@@ -330,7 +329,14 @@
     text-decoration: underline;
 }
 
-/* -- responsive on mobile -- */
+/* -- responsive -- */
+@media screen and (max-width: 1000px)
+{
+    #formContainer
+    {
+        margin: 50px 20px;
+    }
+}
 @media screen and (max-width: 960px)
 {
     #uitleg
@@ -346,6 +352,10 @@
 }
 @media screen and (max-width: 800px)
 {
+    .question > div
+    {
+        flex-direction: column;
+    }
     #explanation
     {
         width: 100%;

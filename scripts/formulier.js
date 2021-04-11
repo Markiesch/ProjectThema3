@@ -15,11 +15,13 @@ function startTestAddCookie()
     }
     document.getElementById("formStartscreen").style.display = "none";
     document.getElementById("fbuttons").style.cssText = "opacity: 1; pointer-events: all;";
+    document.getElementById("fquestions").style.display = "block";
 }
 function startStudieTest()
 {
     document.getElementById("formStartscreen").style.display = "none";
     document.getElementById("fbuttons").style.cssText = "opacity: 1; pointer-events: all;";
+    document.getElementById("fquestions").style.display = "block";
 }
 
 //variable aanmaken

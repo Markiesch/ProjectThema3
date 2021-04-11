@@ -3,3 +3,125 @@ p a
     color: white;
     text-decoration: none;
 }
+
+.information--section {
+    display: grid;
+    padding-top: 5em;
+    grid-gap: 1em;
+    grid-template-columns: minmax(400px, 4fr) minmax(200px, 2fr);
+}
+
+.information--section div div {
+    background-color: var(--blue);
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+
+
+
+
+
+.result--section {  
+    position: relative;
+    top: -50px;
+    padding-top: 5em;
+    grid-gap: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+
+.result--section div {
+    background-color: var(--blue);
+    padding: 1em;
+    margin-bottom: 2em;
+
+}
+
+.toelichting
+{
+    font-size: 0.7em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contact
+{
+    background-color: var(--blue);
+    height: auto;
+    padding: 5px 10px;
+    margin: 0 10px;
+}
+
+/* contact blok */
+#contact
+{
+    width: 25%;
+    min-width: 300px;
+}
+#contact img
+{
+    width: 18px;
+    height: auto;
+}
+#contact > div
+{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+#contact a
+{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+#contact a:hover
+{
+    text-decoration: underline;
+}
+
+/* -- responsive on mobile -- */
+@media screen and (max-width: 960px)
+{
+    #contact
+    {
+        width: 15%;
+        min-width: 225px;
+    }
+}
+@media screen and (max-width: 800px)
+{
+    #contact
+    {
+        width: 90%;
+        min-width: auto;
+    }
+}
+@media screen and (max-width: 400px)
+{
+    #contact
+    {
+        width: 95%;
+    }
+}

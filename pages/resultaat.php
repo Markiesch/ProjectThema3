@@ -12,7 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/stylesheet.css">
     <link rel="stylesheet" href="../styles/resultaat.css">
-    <link rel="stylesheet" href="../styles/index.css">
     <script src="../scripts/script.js" defer></script>
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <title>ICT-Academie - Koning Willem I College</title>
@@ -30,8 +29,6 @@
                 </div>
             </section>
             <div class="streep"></div>
-           
-           
             <section class="information--section">
                 <div>
                     <div>
@@ -40,18 +37,55 @@
                         Jij hebt de juiste eigenschappen voor deze opleiding
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
                     </div>
-                   <div>
-                       
-                   </div>
                 </div>
                 <div>
-                    <div>
+                    <div id="contact">
                         <h2>Contact</h2>
-                        <p>
-                            <a href="callto:0736249600">073 624 9 600</a> <br>      
-                            <a href="mailto:info@kw1c.nl">info@kw1c.nl</a>    
-                        </p>    
+                        <div title="Bel het Studenten Succes Centrum">
+                            <img src="../images/phone.png" alt="phone">
+                            <a href="tel:073 624 9 600">073 624 9 600</a>
+                        </div>
+                        <div title="Stuur een e-mail naar het Studenten Succes Centrum">
+                            <img src="../images/email.png" alt="mail">
+                            <a href="mailto:info@kwc1.nl">info@kwc1.nl</a>
+                        </div>
                     </div>
+                </div>
+            </section>
+
+            <section class="result--section">
+               <div>
+                   <img src="../images/softdev.jpg" width="300px">
+                   <h3>Software Developer</h3>
+                   <p>Je hebt .... punten behaald.</p> <!--hier php code met resultaat-->
+                   <p class="toelichting">
+                   Lorem Ipsum is simply dummy text of the 
+                    printing and typesetting industry. Lorem 
+                    Ipsum has been the industry's standard 
+                    dummy text ever since the 1500s
+                   </p>
+                </div>
+                <div>
+                    <img src="../images/softdev.jpg" width="300px">
+                    <h3>ICT-Beheer</h3>
+                    <p>Je hebt .... punten behaald.</p> <!--hier php code met resultaat-->
+                    <p class="toelichting">
+                   Lorem Ipsum is simply dummy text of the 
+                    printing and typesetting industry. Lorem 
+                    Ipsum has been the industry's standard 
+                    dummy text ever since the 1500s
+                   </p>
+                </div>
+                <div>
+                    <img src="../images/softdev.jpg" width="300px">
+                    <h3>ICT-Beheer</h3>
+                    <p>Je hebt .... punten behaald.</p> <!--hier php code met resultaat-->
+                    <p class="toelichting">
+                   Lorem Ipsum is simply dummy text of the 
+                    printing and typesetting industry. Lorem 
+                    Ipsum has been the industry's standard 
+                    dummy text ever since the 1500s
+                   </p>
                 </div>
             </section>
         </main>

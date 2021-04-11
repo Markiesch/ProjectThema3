@@ -31,7 +31,7 @@
             <section class="information--section">
                 <div>
                     <div>
-                        <h2>Algemeen</h2>
+                        <h3>Algemeen</h3>
                         <p>
                             Een goede ICT’er is gedreven om te leren en is bereid om kennis te delen met anderen. Dat vinden ze bij het bedrijfsleven. 
                             Verder moet je wat willen bereiken, plezier hebben in wat je doet en goed in een team kunnen werken. 
@@ -41,7 +41,7 @@
                         </p>
                     </div>
                     <div>
-                        <h2>Algemeen</h2>
+                        <h3>Algemeen</h3>
                         <p>
                             Een goede ICT’er is gedreven om te leren en is bereid om kennis te delen met anderen. Dat vinden ze bij het bedrijfsleven. 
                             Verder moet je wat willen bereiken, plezier hebben in wat je doet en goed in een team kunnen werken. 
@@ -53,7 +53,7 @@
                 </div>
                 <div>
                     <div>
-                        <h2>Informatie</h2>
+                        <h3>Informatie</h3>
                         <p>Download de brochure van deze afdeling:</p>
                         <a href="https://www.kw1c.nl/media/afdeling/folders/811-ict-academie.pdf">Brochure in PDF</a>
                     </div>

@@ -31,7 +31,7 @@
             <section class="information--section">
                 <div>
                     <div>
-                        <h2>Resultaat</h2><br>
+                        <h3>Resultaat</h3><br>
                         <p>Bij jou past de opleiding " ….……... " het beste.
                         Jij hebt de juiste eigenschappen voor deze opleiding
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
@@ -39,7 +39,7 @@
                 </div>
                 <div>
                     <div id="contact">
-                        <h2>Contact</h2>
+                        <h3>Contact</h3>
                         <div title="Bel het Studenten Succes Centrum">
                             <img src="../images/phone.png" alt="phone">
                             <a href="tel:073 624 9 600">073 624 9 600</a>
@@ -65,7 +65,7 @@
                    </p>
                 </div>
                 <div>
-                    <img src="../images/softdev.jpg" width="300px">
+                    <img src="../images/ictbeheer.jpg" width="300px">
                     <h3>ICT-Beheer</h3>
                     <p>Je hebt .... punten behaald.</p> <!--hier php code met resultaat-->
                     <p class="toelichting">
@@ -76,8 +76,8 @@
                    </p>
                 </div>
                 <div>
-                    <img src="../images/softdev.jpg" width="300px">
-                    <h3>ICT-Beheer</h3>
+                    <img src="../images/systemanddevices.jpg" width="300px">
+                    <h3>Allround medewerker system and devices</h3>
                     <p>Je hebt .... punten behaald.</p> <!--hier php code met resultaat-->
                     <p class="toelichting">
                    Lorem Ipsum is simply dummy text of the 

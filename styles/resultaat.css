@@ -28,10 +28,73 @@ p a
 
 .result--section div {
     background-color: var(--blue);
-    padding: 1em;
     margin-bottom: 2em;
-    border-radius: 10px;
+}
 
+
+.resultCard
+{
+    background-color: #0085ca; 
+    color: #fff;  
+    border-radius: 10px;
+}
+.cardBgPosition
+{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 180px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#cardBgsoft
+{
+    background-image: url("../images/softdev.jpg");
+}
+#cardBgict
+{
+    background-image: url("../images/ictbeheer.jpg");
+}
+#cardBgsystem
+{
+    background-image: url("../images/systemanddevices.jpg");
+}
+
+
+.cardContent
+{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.cardContent h3
+{
+    margin: 5px 0;
+}
+.cardContent p:first-of-type
+{
+    margin: 5px 0;
+    font-style: italic;
+    font-size: 0.9em;
+}
+.cardContent p
+{
+    margin: 10px 0;
+}
+.cardContent a
+{
+    display: block;
+    text-align: end;
+    margin: 5px 0;
+    color: white;
+    font-style: italic;
+}
+
+#aligntelephone
+{
+    position: relative;
+    top: -30px;
 }
 
 .toelichting
@@ -44,7 +107,7 @@ p a
 {
     background-color: var(--blue);
     height: auto;
-    padding: 5px 10px;
+    padding: 7px 10px;
     margin: 0 10px;
 }
 

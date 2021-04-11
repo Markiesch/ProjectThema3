@@ -44,7 +44,7 @@
                             <img src="../images/phone.png" alt="phone">
                             <a href="tel:073 624 9 600">073 624 9 600</a>
                         </div>
-                        <div title="Stuur een e-mail naar het Studenten Succes Centrum">
+                        <div title="Stuur een e-mail naar het Studenten Succes Centrum" id="aligntelephone">
                             <img src="../images/email.png" alt="mail">
                             <a href="mailto:info@kwc1.nl">info@kwc1.nl</a>
                         </div>
@@ -52,40 +52,49 @@
                 </div>
             </section>
 
-            <section class="result--section">
-               <div>
-                   <img src="../images/softdev.jpg" width="300px">
-                   <h3>Software Developer</h3>
-                   <p>Je hebt .... punten behaald.</p> <!--hier php code met resultaat-->
-                   <p class="toelichting">
-                   Lorem Ipsum is simply dummy text of the 
-                    printing and typesetting industry. Lorem 
-                    Ipsum has been the industry's standard 
-                    dummy text ever since the 1500s
-                   </p>
-                </div>
-                <div>
-                    <img src="../images/ictbeheer.jpg" width="300px">
-                    <h3>ICT-Beheer</h3>
-                    <p>Je hebt .... punten behaald.</p> <!--hier php code met resultaat-->
-                    <p class="toelichting">
-                   Lorem Ipsum is simply dummy text of the 
-                    printing and typesetting industry. Lorem 
-                    Ipsum has been the industry's standard 
-                    dummy text ever since the 1500s
-                   </p>
-                </div>
-                <div>
-                    <img src="../images/systemanddevices.jpg" width="300px">
-                    <h3>Allround medewerker system and devices</h3>
-                    <p>Je hebt .... punten behaald.</p> <!--hier php code met resultaat-->
-                    <p class="toelichting">
-                   Lorem Ipsum is simply dummy text of the 
-                    printing and typesetting industry. Lorem 
-                    Ipsum has been the industry's standard 
-                    dummy text ever since the 1500s
-                   </p>
-                </div>
+            <section class="result--section">   
+                <div class="resultCard">
+                        <div id="cardBgsoft" class="cardBgPosition"></div>
+                        <div class="cardContent">
+                            <h3>Software Developer</h3>
+                            <p>Je hebt .... punten behaald.</p>
+                            <p class="toelichting">
+                            Lorem Ipsum is simply dummy text of the 
+                            printing and typesetting industry. Lorem 
+                            Ipsum has been the industry's standard 
+                            dummy text ever since the 1500s
+                            </p>
+                            <a href="#">Lees meer</a>
+                        </div>
+                    </div> 
+                    <div class="resultCard">
+                        <div id="cardBgict" class="cardBgPosition"></div>
+                        <div class="cardContent">
+                            <h3>ICT Beheer</h3>
+                            <p>Je hebt .... punten behaald.</p>
+                            <p class="toelichting">
+                            Lorem Ipsum is simply dummy text of the 
+                            printing and typesetting industry. Lorem 
+                            Ipsum has been the industry's standard 
+                            dummy text ever since the 1500s
+                            </p>
+                            <a href="#">Lees meer</a>
+                        </div>
+                    </div> 
+                    <div class="resultCard">
+                        <div id="cardBgsystem" class="cardBgPosition"></div>
+                        <div class="cardContent">
+                            <h3>Allround medewerker sytem and devices</h3>
+                            <p>Je hebt .... punten behaald.</p>
+                            <p class="toelichting">
+                            Lorem Ipsum is simply dummy text of the 
+                            printing and typesetting industry. Lorem 
+                            Ipsum has been the industry's standard 
+                            dummy text ever since the 1500s
+                            </p>
+                            <a href="#">Lees meer</a>
+                        </div>
+                    </div> 
             </section>
         </main>
         <?php

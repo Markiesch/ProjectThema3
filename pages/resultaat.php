@@ -56,24 +56,36 @@
             <section class="information--section">
                 <div>
                     <div>
-                        <h3>Resultaat</h3><br>
+                        <?php
+                            if ($softDev <= 10 && $ictBeh <= 10 && $allround <= 10) {
+                                echo "<div id='redLine'></div>";
+                            } else {
+                                echo "<div id='greenLine'></div>";
+                            }
+                        ?>
+                        <h3>Resultaat</h3>
+                        <span class="time">Ingevuld op <?php echo date("m-d-Y G:i"); ?></span>
+                        <br><br>
                         <p>
                         <?php
-                            if (!isset($_COOKIE["username"])) {
-                                setcookie("username", "gebruiker", 3600 * 24 * 365, "/");
+                            if (isset($_COOKIE['username'])) {
+                                $username = $_COOKIE["username"];
+                            } else {
+                                $username = "gebruiker";
                             }
                             //if else voor score onder de 10
                             if ($softDev <= 10 && $ictBeh <= 10 && $allround <= 10) {
-                                echo "Geen van de opleidingen past bij jou " . $_COOKIE["username"] . ". Zoek verder naar een andere opleiding!<br><br>
+                                echo "Geen van de opleidingen past bij jou " . $username .
+                                ". Zoek verder naar een andere opleiding!<br><br>
                                 <a href='https://www.kw1c.nl/opleidingen' target='_blank' style='text-decoration: underline; font-style: italic;'>Zoek een andere opleiding</a>";
                             } else {
                                 //aan de hand van hoogste score, tekst tonen
                                 if ($softDev > $ictBeh && $softDev > $allround) {
-                                    echo "Bij jou past de opleiding <strong>Software Developer</strong> het beste! Je hebt hier " . $softDev . " punten behaald. Jij hebt de juiste eigenschappen voor deze opleiding. Wil je alles leren over het programmeren van software? Lijkt het je leuk om problemen op een creatieve manier oplossen? Dan is dit een mooie opleiding voor jou!<br><br><a href='https://www.kw1c.nl/opleiding/25604o10/software-developer-bol' target='_blank' style='text-decoration: underline; font-style: italic;'>Lees meer</a>";
+                                    echo "Bij jou past de opleiding <strong>Software Developer</strong> het beste ". $username . "! Je hebt hier " . $softDev . " punten behaald. Jij hebt de juiste eigenschappen voor deze opleiding. Wil je alles leren over het programmeren van software? Lijkt het je leuk om problemen op een creatieve manier oplossen? Dan is dit een mooie opleiding voor jou!<br><br><a href='https://www.kw1c.nl/opleiding/25604o10/software-developer-bol' target='_blank' style='text-decoration: underline; font-style: italic;'>Lees meer</a>";
                                 } elseif ($ictBeh > $softDev && $ictBeh > $allround) {
-                                    echo "Bij jou past de opleiding <strong>ICT-beheer</strong> het beste! Je hebt hier " . $ictBeh . " punten behaald. Jij hebt de juiste eigenschappen voor deze opleiding. Wil jij later verantwoordelijk zijn voor de informatiesystemen waar de moderne maatschappij op draait? Lees dan meer over onze opleiding Expert IT systems and devices.<br><br><a href='https://www.kw1c.nl/opleiding/25606o10/expert-it-systems-and-devices-bol' target='_blank' style='text-decoration: underline; font-style: italic;'>Lees meer</a>";
+                                    echo "Bij jou past de opleiding <strong>ICT-beheer</strong> het beste ". $username . "! Je hebt hier " . $ictBeh . " punten behaald. Jij hebt de juiste eigenschappen voor deze opleiding. Wil jij later verantwoordelijk zijn voor de informatiesystemen waar de moderne maatschappij op draait? Lees dan meer over onze opleiding Expert IT systems and devices.<br><br><a href='https://www.kw1c.nl/opleiding/25606o10/expert-it-systems-and-devices-bol' target='_blank' style='text-decoration: underline; font-style: italic;'>Lees meer</a>";
                                 } elseif ($allround > $softDev && $allround > $ictBeh) {
-                                    echo "Bij jou past de opleiding <strong>Allround medewerker sytem and devices</strong> het beste! Je hebt hier " . $allround . " punten behaald. Jij hebt de juiste eigenschappen voor deze opleiding. Heb jij echt verstand van computers en netwerken? Vind je het ook leuk om dienstverlenend te zijn? Dan is de opleiding Allround medewerker IT systems and devices misschien iets voor jou. <br><br><a href='https://www.kw1c.nl/opleiding/25605o10/allround-medewerker-it-systems-and-devices-bol' target='_blank' style='text-decoration: underline; font-style: italic;'>Lees meer</a>";
+                                    echo "Bij jou past de opleiding <strong>Allround medewerker sytem and devices</strong> het beste ". $username . "! Je hebt hier " . $allround . " punten behaald. Jij hebt de juiste eigenschappen voor deze opleiding. Heb jij echt verstand van computers en netwerken? Vind je het ook leuk om dienstverlenend te zijn? Dan is de opleiding Allround medewerker IT systems and devices misschien iets voor jou. <br><br><a href='https://www.kw1c.nl/opleiding/25605o10/allround-medewerker-it-systems-and-devices-bol' target='_blank' style='text-decoration: underline; font-style: italic;'>Lees meer</a>";
                                 }
                             }
                         ?>

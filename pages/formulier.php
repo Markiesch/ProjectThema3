@@ -389,7 +389,7 @@
                             <!-- verstuurscherm form -->
                             <div id="endScreen" class="question">
                                 <h3>Wil je de antwoorden versturen?</h3>
-                                <p>Als een vraag niet ingevult is, kan dit het resultaat beïnvloeden!</p>
+                                <p>Alle vragen zijn verplicht om in te vullen!</p>
                                 <button type="submit" class="btn" tabindex="-1">
                                     <span>Bekijk resultaat</span>
                                 </button>

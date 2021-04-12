@@ -215,9 +215,9 @@
                                         <input type="radio" name="quest5" value="0,5,5" id="b5" tabindex="-1">
                                         <label for="b5">B. Ik weet nog niet veel, maar wilt dat wel leren</label><br>
                                         <input type="radio" name="quest5" value="0,0,0" id="c5" tabindex="-1">
-                                        <label for="c5">C. Ik weet er niet veel van en lijkt me niet zo leuk </label><br>
+                                        <label for="c5">C. Ik weet er niet veel van en lijkt me een beetje leuk </label><br>
                                         <input type="radio" name="quest5" value="0,-5,-10" id="d5" tabindex="-1">
-                                        <label for="d5">D. Ik weet er niet veel van en lijkt me niet zo leuk in </label><br>
+                                        <label for="d5">D. Nee en lijkt me niet leuk </label><br>
                                     </div>
                                     <div class="image">
                                     <figure>

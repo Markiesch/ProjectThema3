@@ -28,13 +28,58 @@
                 </div>
             </section>
             <div class="streep"></div>
+
+            <?php
+                //array maken met waardes van input
+                $values = 
+                [
+                    //explode maakt van strings een array
+                    explode(",", $_POST["quest1"]),
+                    explode(",", $_POST["quest2"]),
+                    explode(",", $_POST["quest3"]),
+                    explode(",", $_POST["quest4"]),
+                    explode(",", $_POST["quest5"]),
+                    explode(",", $_POST["quest6"]),
+                    explode(",", $_POST["quest7"]),
+                    explode(",", $_POST["quest8"]),
+                    explode(",", $_POST["quest9"]),
+                    explode(",", $_POST["quest10"]),
+                    explode(",", $_POST["quest11"]),
+                    explode(",", $_POST["quest12"]),
+                    explode(",", $_POST["quest13"]),
+                    explode(",", $_POST["quest14"])
+                ];
+
+                $softDev = 0;
+                $ictBeh = 0;
+                $allround = 0;
+
+                for ($i = 0; $i < count($values); $i++) {
+                    $softDev += $values[$i][0];
+                    $ictBeh += $values[$i][1];
+                    $allround += $values[$i][2];
+                }
+            ?>
+
             <section class="information--section">
                 <div>
                     <div>
                         <h3>Resultaat</h3><br>
-                        <p>Bij jou past de opleiding " ….……... " het beste.
-                        Jij hebt de juiste eigenschappen voor deze opleiding
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                        <p>
+                        <?php
+                            if ($softDev <= 10 && $ictBeh <= 10 && $allround <= 10) {
+                                echo "Geen van de opleidingen past bij jou. Zoek verder naar een andere opleiding!";
+                            } else {
+                                if ($softDev > $ictBeh && $softDev > $allround) {
+                                    echo "Bij jou past de opleiding <strong>Software Developer</strong> het beste! Je hebt hier " . $softDev . " punten behaald. Jij hebt de juiste eigenschappen voor deze opleiding. Wil je alles leren over het programmeren van software? Lijkt het je leuk om problemen op een creatieve manier oplossen? Dan is dit een mooie opleiding voor jou!<br><br><a href='https://www.kw1c.nl/opleiding/25604o10/software-developer-bol' target='_blank' style='text-decoration: underline; font-style: italic;'>Lees meer</a>";
+                                } elseif ($ictBeh > $softDev && $ictBeh > $allround) {
+                                    echo "Bij jou past de opleiding <strong>ICT-beheer</strong> het beste! Je hebt hier " . $ictBeh . " punten behaald. Jij hebt de juiste eigenschappen voor deze opleiding. Wil jij later verantwoordelijk zijn voor de informatiesystemen waar de moderne maatschappij op draait? Lees dan meer over onze opleiding Expert IT systems and devices.<br><br><a href='https://www.kw1c.nl/opleiding/25606o10/expert-it-systems-and-devices-bol' target='_blank' style='text-decoration: underline; font-style: italic;'>Lees meer</a>";
+                                } elseif ($allround > $softDev && $allround > $ictBeh) {
+                                    echo "Bij jou past de opleiding <strong>Allround medewerker sytem and devices</strong> het beste! Je hebt hier " . $allround . " punten behaald. Jij hebt de juiste eigenschappen voor deze opleiding. Heb jij echt verstand van computers en netwerken? Vind je het ook leuk om dienstverlenend te zijn? Dan is de opleiding Allround medewerker IT systems and devices misschien iets voor jou. <br><br><a href='https://www.kw1c.nl/opleiding/25605o10/allround-medewerker-it-systems-and-devices-bol' target='_blank' style='text-decoration: underline; font-style: italic;'>Lees meer</a>";
+                                }
+                            }
+                        ?>
+                        </p>
                     </div>
                 </div>
                 <div>
@@ -57,12 +102,11 @@
                         <div id="cardBgsoft" class="cardBgPosition"></div>
                         <div class="cardContent">
                             <h3>Software Developer</h3>
-                            <p>Je hebt .... punten behaald.</p>
+                            <p>Je hebt 
+                                <?php echo $softDev; ?>    
+                            punten behaald.</p>
                             <p class="toelichting">
-                            Lorem Ipsum is simply dummy text of the 
-                            printing and typesetting industry. Lorem 
-                            Ipsum has been the industry's standard 
-                            dummy text ever since the 1500s
+                            Wil je alles leren over het programmeren van software? Lijkt het je leuk om problemen op een creatieve manier oplossen? Dan is dit een mooie opleiding voor jou!
                             </p>
                             <a href="https://www.kw1c.nl/opleiding/25604o10/software-developer-bol" target="_blank">Lees meer</a>
                         </div>
@@ -71,12 +115,11 @@
                         <div id="cardBgict" class="cardBgPosition"></div>
                         <div class="cardContent">
                             <h3>ICT Beheer</h3>
-                            <p>Je hebt .... punten behaald.</p>
+                            <p>Je hebt 
+                                <?php echo $ictBeh; ?>    
+                            punten behaald.</p>
                             <p class="toelichting">
-                            Lorem Ipsum is simply dummy text of the 
-                            printing and typesetting industry. Lorem 
-                            Ipsum has been the industry's standard 
-                            dummy text ever since the 1500s
+                            Wil jij later verantwoordelijk zijn voor de informatiesystemen waar de moderne maatschappij op draait? Lees dan meer over onze opleiding Expert IT systems and devices.
                             </p>
                             <a href="https://www.kw1c.nl/opleiding/25606o10/expert-it-systems-and-devices-bol" target="_blank">Lees meer</a>
                         </div>
@@ -85,12 +128,11 @@
                         <div id="cardBgsystem" class="cardBgPosition"></div>
                         <div class="cardContent">
                             <h3>Allround medewerker sytem and devices</h3>
-                            <p>Je hebt .... punten behaald.</p>
+                            <p>Je hebt 
+                                <?php echo $allround; ?>    
+                            punten behaald.</p>
                             <p class="toelichting">
-                            Lorem Ipsum is simply dummy text of the 
-                            printing and typesetting industry. Lorem 
-                            Ipsum has been the industry's standard 
-                            dummy text ever since the 1500s
+                            Heb jij echt verstand van computers en netwerken? Vind je het ook leuk om dienstverlenend te zijn? Dan is de opleiding Allround medewerker IT systems and devices misschien iets voor jou. 
                             </p>
                             <a href="https://www.kw1c.nl/opleiding/25605o10/allround-medewerker-it-systems-and-devices-bol" target="_blank">Lees meer</a>
                         </div>

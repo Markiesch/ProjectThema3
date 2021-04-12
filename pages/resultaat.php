@@ -69,7 +69,8 @@
                         <?php
                             //if else voor score onder de 10
                             if ($softDev <= 10 && $ictBeh <= 10 && $allround <= 10) {
-                                echo "Geen van de opleidingen past bij jou. Zoek verder naar een andere opleiding!";
+                                echo "Geen van de opleidingen past bij jou. Zoek verder naar een andere opleiding!<br><br>
+                                <a href='https://www.kw1c.nl/opleidingen' target='_blank' style='text-decoration: underline; font-style: italic;'>Zoek een andere opleiding</a>";
                             } else {
                                 //aan de hand van hoogste score, tekst tonen
                                 if ($softDev > $ictBeh && $softDev > $allround) {
@@ -98,6 +99,7 @@
                     </div>
                 </div>
             </section>
+
 
             <section class="result--section">   
                 <div class="resultCard">

@@ -30,24 +30,16 @@
             <div class="streep"></div>
             <?php
                 //array maken met waardes van input
-                $values = 
-                [
+                $values = [];
+
+                for ($x = 1; $x < 15; $x++) {
+                    $value = "0,0,0";
+                    if (isset($_POST["quest$x"])) {
+                        $value = $_POST["quest$x"];
+                    }
                     //explode maakt van strings een array
-                    explode(",", $_POST["quest1"]),
-                    explode(",", $_POST["quest2"]),
-                    explode(",", $_POST["quest3"]),
-                    explode(",", $_POST["quest4"]),
-                    explode(",", $_POST["quest5"]),
-                    explode(",", $_POST["quest6"]),
-                    explode(",", $_POST["quest7"]),
-                    explode(",", $_POST["quest8"]),
-                    explode(",", $_POST["quest9"]),
-                    explode(",", $_POST["quest10"]),
-                    explode(",", $_POST["quest11"]),
-                    explode(",", $_POST["quest12"]),
-                    explode(",", $_POST["quest13"]),
-                    explode(",", $_POST["quest14"])
-                ];
+                    array_push($values, explode(",", $value));
+                }
 
                 $softDev = 0;
                 $ictBeh = 0;

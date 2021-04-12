@@ -50,7 +50,7 @@
                         </li>
                     </ol>
                 </div>
-                <div id="contact">
+                <div id="contactBox">
                     <h3>Contact</h3>
                     <div title="Bel het Studenten Succes Centrum">
                         <img src="../images/phone.png" alt="phone">

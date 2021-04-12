@@ -52,10 +52,7 @@ function nextQuestion() {
     if (activeQuestion == 2) {
         prevBtn.style.cssText = "opacity: 1; pointer-events: all;";
     }
-
-    if (activeQuestion <= 15) {
-        changeQuestion(activeQuestion);
-    }
+    changeQuestion(activeQuestion);
 }
 
 //change question

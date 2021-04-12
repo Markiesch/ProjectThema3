@@ -28,7 +28,7 @@
 }
 /* uitleg blok */
 #uitleg,
-#contact {
+#contactBox {
     background-color: var(--blue);
     height: auto;
     padding: 5px 10px;
@@ -45,26 +45,26 @@
     padding-bottom: 5px;
 }
 /* contact blok */
-#contact {
+#contactBox {
     width: 25%;
     min-width: 300px;
 }
-#contact img {
+#contactBox img {
     width: 18px;
     height: auto;
 }
-#contact > div {
+#contactBox > div {
     padding: 5px;
     display: flex;
     align-items: center;
 }
-#contact a {
+#contactBox a {
     color: #fff;
     text-decoration: none;
     display: inline-block;
     padding: 0 10px;
 }
-#contact a:hover {
+#contactBox a:hover {
     text-decoration: underline;
 }
 
@@ -303,7 +303,7 @@
         width: 50%;
         min-width: 515px;
     }
-    #contact {
+    #contactBox {
         width: 15%;
         min-width: 225px;
     }
@@ -323,7 +323,7 @@
         min-width: auto;
         margin-bottom: 5px;
     }
-    #contact {
+    #contactBox {
         width: 90%;
         min-width: auto;
     }
@@ -332,7 +332,7 @@
     #uitleg {
         width: 95%;
     }
-    #contact {
+    #contactBox {
         width: 95%;
     }
     #fheader img {

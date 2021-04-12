@@ -34,11 +34,8 @@
     margin: 0;
     padding: 0;
 }
-
-body.highcontrast {
-    --blue: #fff;
-    --light-blue: #eee;
-    --red: #000;
+*::selection {
+    background-color: #999;
 }
 
 body {

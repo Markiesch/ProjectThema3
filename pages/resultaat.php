@@ -67,9 +67,12 @@
                         <h3>Resultaat</h3><br>
                         <p>
                         <?php
+                            if (!isset($_COOKIE["username"])) {
+                                setcookie("username", "gebruiker", 3600 * 24 * 365, "/");
+                            }
                             //if else voor score onder de 10
                             if ($softDev <= 10 && $ictBeh <= 10 && $allround <= 10) {
-                                echo "Geen van de opleidingen past bij jou. Zoek verder naar een andere opleiding!<br><br>
+                                echo "Geen van de opleidingen past bij jou " . $_COOKIE["username"] . ". Zoek verder naar een andere opleiding!<br><br>
                                 <a href='https://www.kw1c.nl/opleidingen' target='_blank' style='text-decoration: underline; font-style: italic;'>Zoek een andere opleiding</a>";
                             } else {
                                 //aan de hand van hoogste score, tekst tonen

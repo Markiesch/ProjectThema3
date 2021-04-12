@@ -28,7 +28,6 @@
                 </div>
             </section>
             <div class="streep"></div>
-
             <?php
                 //array maken met waardes van input
                 $values = 
@@ -54,6 +53,7 @@
                 $ictBeh = 0;
                 $allround = 0;
 
+                //value toevoegen aan variables
                 for ($i = 0; $i < count($values); $i++) {
                     $softDev += $values[$i][0];
                     $ictBeh += $values[$i][1];
@@ -67,9 +67,11 @@
                         <h3>Resultaat</h3><br>
                         <p>
                         <?php
+                            //if else voor score onder de 10
                             if ($softDev <= 10 && $ictBeh <= 10 && $allround <= 10) {
                                 echo "Geen van de opleidingen past bij jou. Zoek verder naar een andere opleiding!";
                             } else {
+                                //aan de hand van hoogste score, tekst tonen
                                 if ($softDev > $ictBeh && $softDev > $allround) {
                                     echo "Bij jou past de opleiding <strong>Software Developer</strong> het beste! Je hebt hier " . $softDev . " punten behaald. Jij hebt de juiste eigenschappen voor deze opleiding. Wil je alles leren over het programmeren van software? Lijkt het je leuk om problemen op een creatieve manier oplossen? Dan is dit een mooie opleiding voor jou!<br><br><a href='https://www.kw1c.nl/opleiding/25604o10/software-developer-bol' target='_blank' style='text-decoration: underline; font-style: italic;'>Lees meer</a>";
                                 } elseif ($ictBeh > $softDev && $ictBeh > $allround) {

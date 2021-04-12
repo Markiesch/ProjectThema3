@@ -22,7 +22,7 @@ function toggleMenu() {
         menuTriangle.style.opacity = 0;
     }
 }
-
+//menu sluiten als op naast header/nav klikt
 document.querySelector("main").addEventListener("click", closeMenu);
 function closeMenu() {
     slideMenu.className = "menuClosed";

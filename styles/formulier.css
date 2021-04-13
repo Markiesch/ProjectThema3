@@ -5,68 +5,91 @@
 */
 
 /* -- uitleg section -- */
-.pagetitle {
+.pagetitle 
+{
     font-size: 2.5em;
     font-weight: 800;
     text-align: center;
     margin: 20px 0;
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
 }
-#explanation {
+
+#explanation 
+{
     width: 80%;
     display: flex;
     justify-content: center;
     align-items: start;
     margin: 0 auto;
 }
+
 /* uitleg blok */
 #uitleg,
-#contactBox {
+#contactBox 
+{
     background-color: var(--blue);
-    height: auto;
-    padding: 5px 10px;
+    padding: 1em;
     margin: 0 10px;
 }
+
 #uitleg {
     width: 50%;
     min-width: 600px;
 }
-#uitleg ol {
+
+#uitleg ol 
+{
     margin: 10px 0 0 20px;
 }
-#uitleg ol li {
+
+#uitleg ol li 
+{
     padding-bottom: 5px;
+    font-size: 16px;
 }
+
 /* contact blok */
-#contactBox {
+#contactBox 
+{
     width: 25%;
     min-width: 300px;
 }
-#contactBox img {
+
+#contactBox img
+{
     width: 18px;
     height: auto;
 }
-#contactBox > div {
+
+#contactBox > div
+{
     padding: 5px;
     display: flex;
     align-items: center;
 }
-#contactBox a {
+
+#contactBox a 
+{
     color: #fff;
     text-decoration: none;
     display: inline-block;
     padding: 0 10px;
 }
-#contactBox a:hover {
+
+#contactBox a:hover 
+{
     text-decoration: underline;
 }
 
 /* -- studiekeuze test -- */
-#studietest {
+#studietest 
+{
     width: 100%;
     margin: 0 auto;
 }
-#formContainer {
+
+#formContainer 
+{
     position: relative;
     background-color: var(--blue);
     min-width: 70%;
@@ -75,8 +98,10 @@
     margin: 50px auto;
     padding: 10px 20px;
 }
+
 /* form header */
-#formContainer #fheader {
+#formContainer #fheader 
+{
     width: 100%;
     height: auto;
     display: flex;
@@ -86,7 +111,8 @@
 }
 
 /* form startscherm */
-#formStartscreen {
+#formStartscreen 
+{
     position: relative;
     z-index: 20;
     min-height: 355px;
@@ -95,10 +121,13 @@
     background-color: var(--blue);
     padding: 5px 0;
 }
-#formStartscreen h3 {
+
+#formStartscreen h3 
+{
     margin-bottom: 10px;
 }
-#formStartscreen #usernameInput {
+#formStartscreen #usernameInput 
+{
     position: relative;
     display: block;
     margin: 40px auto 15px auto;
@@ -113,12 +142,15 @@
     color: #fff;
     font-size: 1rem;
 }
-#formStartscreen #usernameInput::placeholder {
+#formStartscreen #usernameInput::placeholder 
+{
     color: rgba(255, 255, 255, 0.8);
     font-style: italic;
     font-size: 0.8rem;
 }
-#formStartscreen button {
+
+#formStartscreen button 
+{
     display: block;
     border: none;
     margin: 25px auto;
@@ -126,7 +158,8 @@
 }
 
 /* form quistions */
-#formContainer #fquestions {
+#formContainer #fquestions 
+{
     position: relative;
     left: 0;
     min-height: 240px;
@@ -134,33 +167,45 @@
     overflow: hidden;
     display: none;
 }
-#formContainer #fquestions > #studietestForm {
+
+#formContainer #fquestions > #studietestForm 
+{
     display: flex;
     position: relative;
     left: 0;
     transition: left 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
-#formContainer .question {
+
+#formContainer .question 
+{
     position: relative;
     min-width: 100%;
     height: auto;
     min-height: 240px;
 }
-.question h3 {
+
+.question h3 
+{
     margin: 5px 0 15px 0;
 }
-.question > div {
+
+.question > div 
+{
     display: flex;
     justify-content: space-between;
     padding: 0 20px 0 5px;
 }
-.question .answers input {
+
+.question .answers input 
+{
     height: 20px;
     width: 20px;
     margin: 5px 0 20px 0;
     cursor: pointer;
 }
-.question .answers label {
+
+.question .answers label 
+{
     position: relative;
     top: -3px;
     padding: 5px 0 5px 5px;
@@ -168,16 +213,22 @@
     cursor: pointer;
     font-size: clamp(0.8rem, 0.5em + 1.5vw, 1.1rem);
 }
-.question .image img {
+
+.question .image img 
+{
     min-width: auto;
     max-width: 350px;
     min-height: auto;
     max-height: 230px;
 }
-.question figcaption {
+
+.question figcaption 
+{
     font-size: 0.8rem;
 }
-#endScreen {
+
+#endScreen 
+{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -185,7 +236,9 @@
     text-align: center;
     padding-top: 25px;
 }
-#endScreen > .btn {
+
+#endScreen > .btn 
+{
     display: block;
     border: none;
     margin: 25px auto;
@@ -193,7 +246,8 @@
 }
 
 /* form buttons */
-#formContainer #fbuttons {
+#formContainer #fbuttons 
+{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -202,7 +256,9 @@
     opacity: 0;
     pointer-events: none;
 }
-#fbuttons #prevBtn {
+
+#fbuttons #prevBtn 
+{
     border: 2px solid transparent;
     border-radius: 50%;
     width: 45px;
@@ -214,17 +270,23 @@
     outline: none;
     transition: 150ms linear;
 }
+
 #fbuttons #prevBtn:hover,
-#fbuttons #prevBtn:focus {
+#fbuttons #prevBtn:focus 
+{
     border: 2px solid #000;
 }
-#fbuttons #prevBtn img {
+
+#fbuttons #prevBtn img 
+{
     width: 30px;
     height: auto;
     padding: 1px;
     pointer-events: none;
 }
-#fbuttons #nextBtn {
+
+#fbuttons #nextBtn 
+{
     border: 2px solid var(--red);
     width: 165px;
     height: 45px;
@@ -236,36 +298,41 @@
     background-color: transparent;
     font-size: 1em;
 }
-#fbuttons #nextBtn:hover {
+
+#fbuttons #nextBtn:hover 
+{
     background-color: var(--red);
 }
-#fbuttons #nextBtn:focus {
+
+#fbuttons #nextBtn:focus 
+{
     border: 3px solid var(--red);
 }
-#fbuttons #nextBtn img {
+
+#fbuttons #nextBtn img 
+{
     width: 30px;
     height: auto;
     pointer-events: none;
     transform: none;
     transition: transform 0.3s linear;
 }
-#fbuttons #nextBtn:hover img {
+
+#fbuttons #nextBtn:hover img 
+{
     animation: animArrow 1s linear forwards infinite;
 }
-@keyframes animArrow {
-    0% {
-        transform: translate(0);
-    }
+
+@keyframes animArrow 
+{
     50% {
         transform: translate(10px);
-    }
-    100% {
-        transform: translate(0);
     }
 }
 
 /* form footer */
-#formContainer #ffooter {
+#formContainer #ffooter 
+{
     margin-top: 10px;
     width: 100%;
     height: 50px;
@@ -274,71 +341,103 @@
     align-items: center;
     border-top: 1px solid var(--white);
 }
-#formContainer #ffooter a {
+
+#formContainer #ffooter a 
+{
     font-size: 0.8em;
     color: #fff;
     text-decoration: none;
     font-style: italic;
 }
-#formContainer #ffooter a:hover {
+#formContainer #ffooter a:hover 
+{
     text-decoration: underline;
 }
 
 /* -- responsive -- */
-@media screen and (max-width: 1000px) {
-    #formContainer {
+@media screen and (max-width: 1000px) 
+{
+    #formContainer 
+    {
         margin: 50px auto;
         max-width: 95%;
     }
 }
-@media screen and (max-width: 960px) {
-    #uitleg {
+
+@media screen and (max-width: 960px) 
+{
+    #uitleg 
+    {
         width: 50%;
         min-width: 515px;
     }
-    #contactBox {
+
+    #contactBox 
+    {
         width: 15%;
         min-width: 225px;
     }
 }
-@media screen and (max-width: 800px) {
-    .question > div {
+
+@media screen and (max-width: 800px) 
+{
+    .question > div 
+    {
         flex-direction: column;
     }
-    #explanation {
+
+    #explanation 
+    {
         width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    #uitleg {
+
+    #uitleg 
+    {
         width: 90%;
         min-width: auto;
         margin-bottom: 5px;
     }
-    #contactBox {
+
+    #contactBox 
+    {
         width: 90%;
         min-width: auto;
     }
 }
-@media screen and (max-width: 400px) {
-    #uitleg {
+
+@media screen and (max-width: 400px) 
+{
+    #uitleg 
+    {
         width: 95%;
     }
-    #contactBox {
+
+    #contactBox 
+    {
         width: 95%;
     }
-    #fheader img {
+
+    #fheader img 
+    {
         width: 60px;
         height: 60px;
     }
-    #formContainer .question {
+
+    #formContainer .question 
+    {
         height: 465px;
     }
-    .question .answers input {
+
+    .question .answers input 
+    {
         margin: 5px 0 10px 0;
     }
-    .question .image img {
+
+    .question .image img 
+    {
         min-width: auto;
         max-width: 100%;
         min-height: auto;

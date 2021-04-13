@@ -8,19 +8,22 @@
 =======================
 */
 
-@font-face {
+@font-face 
+{
     src: url("../fonts/Sintony-Regular.ttf");
     font-family: "Sintony";
     font-weight: 500;
 }
 
-@font-face {
+@font-face 
+{
     src: url("../fonts/Sintony-Bold.ttf");
     font-family: "Sintony";
     font-weight: 600;
 }
 
-:root {
+:root 
+{
     --blue: #0085ca;
     --light-blue: #66b6df;
     --red: #ef2b2d;
@@ -29,49 +32,55 @@
 
 *,
 *::before,
-*::after {
+*::after 
+{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-*::selection {
+*::selection 
+{
     background-color: #999;
 }
 
-body {
+body 
+{
     font-family: "Sintony", Arial, Helvetica, sans-serif;
     background-color: var(--light-blue);
     color: var(--white);
 }
 
-h1 {
+h1 
+{
     /* Min - ideal - max, font-size */
     font-size: clamp(2.75rem, 1.75em + 4.75vw, 7.5rem);
     font-weight: 600;
 }
 
-h2 {
+h2 
+{
     font-size: clamp(1.25rem, 1em + 2vw, 2.75rem);
     font-weight: 500;
 }
 
-h3 {
+h3 
+{
     font-size: clamp(1rem, 0.75em + 1.75vw, 1.5rem);
     font-weight: 800;
 }
 
-p,
-a,
-li,
-span {
+p, a, li, span 
+{
     font-size: clamp(0.8rem, 0.5em + 1.5vw, 1.1rem);
 }
 
-main a.btn {
+main a.btn 
+{
     font-size: clamp(1.4rem, 0.75em + 1.75vw, 1.75rem);
 }
 
-.intro {
+.intro 
+{
     margin: 0 auto;
     width: 100%;
     text-align: center;
@@ -82,7 +91,8 @@ main a.btn {
     min-height: 80vh;
 }
 
-.intro::before {
+.intro::before 
+{
     content: "";
     position: absolute;
     top: 0;
@@ -95,23 +105,26 @@ main a.btn {
     filter: brightness(0.85);
 }
 
-.banner::before {
+.banner::before 
+{
     background-image: url("../images/bannerred.png");
 }
 
-.intro div {
+.intro div 
+{
     /* Creëert een nieuwe stacking layer */
     position: relative;
     width: 100%;
 }
 
-.intro h1 {
+.intro h1 
+{
     color: white;
     animation: 300ms fadein ease;
 }
 
-.intro a.btn,
-.btn {
+.intro a.btn, .btn 
+{
     background-color: var(--red);
     color: white;
     padding: 0.5em 1em;
@@ -122,36 +135,43 @@ main a.btn {
     cursor: pointer;
 }
 
-.intro a.btn:hover {
+.intro a.btn:hover 
+{
     transform: translateY(-10%);
 }
 
-.intro h2 {
+.intro h2 
+{
     color: white;
     margin: 0 0 0.75em 0;
     animation: 300ms fadein ease;
     overflow: hidden;
 }
 
-.streep {
+.streep 
+{
     background-color: white;
     height: 12px;
     background-image: url("../images/lijn.png");
 }
 
-section:not(.intro) {
+section:not(.intro) 
+{
     min-width: 70%;
     max-width: 800px;
     margin: 0 auto;
 }
 
-@keyframes fadein {
-    from {
+@keyframes fadein 
+{
+    from 
+    {
         opacity: 0.25;
         transform: translateY(-50%);
     }
 
-    to {
+    to 
+    {
         opacity: 1;
         transform: translateY(0%);
     }
@@ -163,7 +183,8 @@ section:not(.intro) {
 =======================
 */
 
-header {
+header 
+{
     position: sticky;
     z-index: 40;
     top: 0;
@@ -177,32 +198,38 @@ header {
     padding: 0 15px;
 }
 
-header a {
+header a 
+{
     text-decoration: none;
 }
 
-header li {
+header li 
+{
     list-style: none;
 }
 
-header .logo {
+header .logo 
+{
     width: 70px;
     height: 70px;
 }
 
-#centerNav > ul {
+#centerNav > ul 
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#centerNav > ul > li {
+#centerNav > ul > li 
+{
     position: relative;
     display: inline-block;
     height: 5.1rem;
 }
 
-#centerNav > ul > li > a {
+#centerNav > ul > li > a 
+{
     color: var(--white);
     display: block;
     height: 5.1rem;
@@ -212,25 +239,29 @@ header .logo {
     font-weight: 600;
 }
 
-#centerNav > ul > li:hover {
+#centerNav > ul > li:hover 
+{
     background-color: var(--white);
     outline: none;
 }
 
 #centerNav a:hover,
-#centerNav a:focus {
+#centerNav a:focus 
+{
     color: var(--blue);
     background-color: var(--white);
     outline: none;
 }
 
 #studietest,
-#studietestMobile {
+#studietestMobile 
+{
     position: relative;
 }
 
 .newMenuItem,
-.newMenuItemMobile {
+.newMenuItemMobile 
+{
     position: absolute;
     right: 0;
     padding: 2px 5px;
@@ -241,73 +272,90 @@ header .logo {
     transition: transform 200ms ease;
     pointer-events: none;
 }
-.newMenuItem {
+
+.newMenuItem 
+{
     top: 10px;
 }
-.newMenuItemMobile {
+
+.newMenuItemMobile 
+{
     top: 50%;
     transform: translate(0, -50%);
 }
 
-#studietest:hover .newMenuItem {
+#studietest:hover .newMenuItem 
+{
     transform: rotate(5deg);
 }
-#studietestMobile:hover .newMenuItemMobile {
+
+#studietestMobile:hover .newMenuItemMobile 
+{
     transform: rotate(5deg) translate(0, -50%);
 }
 
 /* right buttons */
-#menuRight {
+#menuRight 
+{
     display: flex;
     align-items: center;
 }
 
-#menuRight #headerIcons {
+#menuRight #headerIcons 
+{
     position: relative;
     height: 5.1rem;
     display: flex;
     align-items: center;
 }
 
-#headerIcons a {
+#headerIcons a 
+{
     color: var(--white);
     margin-right: 0.7em;
     font-size: 1.33em;
     line-height: 1.5em;
 }
 
-#headerIcons #foreign-visitors {
+#headerIcons #foreign-visitors 
+{
     height: 1.1em;
     width: auto;
     border: 1px solid black;
 }
 
-#headerIcons #foreign-visitors:hover {
+#headerIcons #foreign-visitors:hover 
+{
     border: 1px solid white;
 }
 
-#headerIcons #lock {
+#headerIcons #lock 
+{
     height: 1.1em;
     width: auto;
     fill: var(--white);
 }
 
-#headerIcons #lock:hover {
+#headerIcons #lock:hover 
+{
     fill: var(--red);
 }
 
-#headerIcons #search {
+#headerIcons #search 
+{
     height: 1.1em;
     width: auto;
     fill: var(--white);
 }
 
-#headerIcons #search:hover {
+#headerIcons #search:hover 
+{
     fill: var(--red);
 }
 
 /* hamburger menu button */
-#hamburger {
+#hamburger 
+{
     background-color: var(--red);
     position: relative;
     width: 50px;
@@ -319,7 +367,8 @@ header .logo {
     cursor: pointer;
 }
 
-#hamburger > #lines {
+#hamburger > #lines 
+{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -328,7 +377,8 @@ header .logo {
     height: 100%;
 }
 
-#hamburger > #lines > .line {
+#hamburger > #lines > .line 
+{
     position: relative;
     width: 25px;
     height: 4px;
@@ -336,33 +386,38 @@ header .logo {
     display: block;
 }
 
-.closeMenu > #lines > .line:nth-child(1) {
+.closeMenu > #lines > .line:nth-child(1) 
+{
     transform: rotateZ(45deg);
     top: 10px;
     width: 30px;
     transition: 200ms ease-in;
 }
 
-.closeMenu > #lines > .line:nth-child(2) {
+.closeMenu > #lines > .line:nth-child(2) 
+{
     opacity: 0;
     transition: 200ms ease-in;
 }
 
-.closeMenu > #lines > .line:nth-child(3) {
+.closeMenu > #lines > .line:nth-child(3) 
+{
     transform: rotateZ(-45deg);
     top: -10px;
     width: 30px;
     transition: 200ms ease-in;
 }
 
-#hamburger > #mobileBurger {
+#hamburger > #mobileBurger 
+{
     display: none;
     width: 150px;
     color: var(--white);
     font-size: 1.4em;
 }
 
-#slideMenuTriangle {
+#slideMenuTriangle 
+{
     position: absolute;
     bottom: 0;
     right: 1.5em;
@@ -376,7 +431,8 @@ header .logo {
 }
 
 /* -- slide menu -- */
-#slideMenu {
+#slideMenu 
+{
     position: fixed;
     z-index: -40;
     top: 5.1em;
@@ -389,18 +445,21 @@ header .logo {
     transition: right 0.5s ease, box-shadow 0.5s ease;
 }
 
-.menuClosed {
+.menuClosed 
+{
     right: -50em;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 }
 
-.menuOpen {
+.menuOpen 
+{
     right: 0;
     box-shadow: -5px 25px 20px 10px rgba(0, 0, 0, 0.3);
 }
 
 #slideMenu #mobileLock,
-#slideMenu #mobileSearch {
+#slideMenu #mobileSearch 
+{
     display: none;
     justify-content: space-around;
     align-items: center;
@@ -412,7 +471,8 @@ header .logo {
 }
 
 #slideMenu #mobileLock img,
-#slideMenu #mobileSearch img {
+#slideMenu #mobileSearch img 
+{
     height: 16px;
     width: 16px;
 }
@@ -420,28 +480,33 @@ header .logo {
 #menu1,
 #mobileBurger,
 #mobileSearch,
-#mobileLock {
+#mobileLock 
+{
     display: none;
 }
 
-#slideMenu > ul {
+#slideMenu > ul 
+{
     font-size: 1.3em;
     padding: 0 0.5em;
     margin-top: 0.7em;
 }
 
-#slideMenu > ul:last-child {
+#slideMenu > ul:last-child 
+{
     margin-bottom: 4em;
 }
 
 #slideMenu li a:hover,
-#slideMenu li .subtitle:hover {
+#slideMenu li .subtitle:hover 
+{
     background-color: #000;
     color: var(--white);
 }
 
 #slideMenu > ul > li > a,
-#slideMenu .subtitle {
+#slideMenu .subtitle 
+{
     line-height: 2em;
     color: var(--white);
     padding: 0 10px 0 1em;
@@ -452,19 +517,22 @@ header .logo {
 }
 
 #slideMenu > ul > li > a,
-#slideMenu .subtitle {
+#slideMenu .subtitle 
+{
     background: url(../images/plus.svg) no-repeat center right var(--blue);
     background-size: 25px;
     background-origin: content-box;
 }
 
-#slideMenu ul.submenu {
+#slideMenu ul.submenu 
+{
     display: none;
     font-size: 0.8em;
     padding-left: 1em;
 }
 
-.submenu li a {
+.submenu li a 
+{
     display: block;
     color: var(--white);
     background-color: var(--light-blue);
@@ -473,57 +541,72 @@ header .logo {
 }
 
 /* -- responsive menu -- */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) 
+{
     header svg#lock,
-    header svg#search {
+    header svg#search 
+    {
         display: none;
     }
 
-    #menuRight #headerIcons {
+    #menuRight #headerIcons 
+    {
         width: 60px;
     }
 
     #slideMenu #mobileLock,
-    #slideMenu #mobileSearch {
+    #slideMenu #mobileSearch 
+    {
         display: inline-block;
     }
 }
 
-@media screen and (max-width: 860px) {
-    nav#centerNav {
+@media screen and (max-width: 860px) 
+{
+    nav#centerNav 
+    {
         display: none;
     }
 
-    #hamburger {
+    #hamburger 
+    {
         width: 130px;
     }
 
-    #hamburger > #mobileBurger {
+    #hamburger > #mobileBurger 
+    {
         display: inline-block;
     }
 
-    #slideMenuTriangle {
+    #slideMenuTriangle 
+    {
         right: 2.5em;
     }
 
-    #slideMenu #menu1 {
+    #slideMenu #menu1 
+    {
         display: block;
     }
 }
 
-@media screen and (max-width: 650px) {
-    #slideMenu {
+@media screen and (max-width: 650px) 
+{
+    #slideMenu 
+    {
         width: 100%;
     }
 
-    header .logo {
+    header .logo 
+    {
         height: 3.8em;
         width: auto;
     }
 }
 
-@media screen and (max-width: 325px) {
-    #foreign-visitors {
+@media screen and (max-width: 325px) 
+{
+    #foreign-visitors 
+    {
         display: none;
     }
 }
@@ -534,11 +617,13 @@ header .logo {
 =======================
 */
 
-footer {
+footer 
+{
     width: 100%;
 }
 
-.footer--container {
+.footer--container 
+{
     z-index: 40;
     width: 100%;
     background-color: var(--blue);
@@ -549,22 +634,27 @@ footer {
     justify-content: space-between;
 }
 
-.logosize {
+.logosize 
+{
     width: 30px;
     margin: 6px;
     float: left;
     transition: transform 100ms linear;
 }
-.logosize:hover {
+
+.logosize:hover 
+{
     transform: rotateZ(5deg);
 }
 
-#privacyverklaring {
+#privacyverklaring 
+{
     text-decoration: none;
     color: white;
     font-size: 12px;
 }
 
-#privacyverklaring:hover {
+#privacyverklaring:hover 
+{
     text-decoration: underline;
 }

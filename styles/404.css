@@ -4,24 +4,28 @@
     File: styles/404.css
 */
 
-body {
+body 
+{
     min-height: 100vh;
     position: relative;
 }
 
-h2 {
+h2 
+{
     text-align: center;
     font-weight: 600;
     margin: 1em 0;
 }
 
-section div {
+section div 
+{
     margin: 2em 0;
     padding: 1em;
     background-color: var(--blue);
 }
 
-section a {
+section a 
+{
     background-color: var(--red);
     color: var(--white);
     padding: 0.5em 1em;
@@ -30,7 +34,8 @@ section a {
     display: inline-block;
 }
 
-footer {
+footer 
+{
     position: absolute;
     bottom: 0;
     left: 0;

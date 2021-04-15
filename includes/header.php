@@ -1,6 +1,6 @@
 <header>
-    <a href="/ProjectThema3/">
-        <img src="/ProjectThema3/images/kw1c-logo.svg" alt="logo" class="logo">
+    <a href="/..">
+        <img src="/..images/kw1c-logo.svg" alt="logo" class="logo">
     </a>
     <nav id="centerNav">
         <ul>
@@ -8,7 +8,7 @@
                 <a href="/opleidingen">Opleidingen</a>
             </li>
             <li id="studietest">
-                <a href="/ProjectThema3/pages/formulier.php">Studiekeuze test</a>
+                <a href="/..pages/formulier.php">Studiekeuze test</a>
                 <span class="newMenuItem">New</span>
             </li>
             <li>
@@ -22,7 +22,7 @@
     <div id="menuRight">
         <div id="headerIcons">
             <a href="/foreign-visitors">
-                <img src="/ProjectThema3/images/foreign-visitors.svg" alt="foreign-visitors" id="foreign-visitors" title="infomation for foreign-visitors">
+                <img src="/..images/foreign-visitors.svg" alt="foreign-visitors" id="foreign-visitors" title="infomation for foreign-visitors">
             </a>
             <a href="https://onsportaal.kw1c.nl/" target="_blank">
                 <svg id="lock" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path xmlns="http://www.w3.org/2000/svg" d="m336 192h-16v-64c0-70.59375-57.40625-128-128-128s-128 57.40625-128 128v64h-16c-26.453125 0-48 21.523438-48 48v224c0 26.476562 21.546875 48 48 48h288c26.453125 0 48-21.523438 48-48v-224c0-26.476562-21.546875-48-48-48zm-229.332031-64c0-47.0625 38.269531-85.332031 85.332031-85.332031s85.332031 38.269531 85.332031 85.332031v64h-170.664062zm0 0" data-original="#000000"/></g></svg>
@@ -59,11 +59,11 @@
     <div id="slideMenu" class="menuClosed">
         <!-- icons mobile -->
         <a href="https://onsportaal.kw1c.nl/" target="_blank" id="mobileLock" title="Het Portaal">
-            <img src="/ProjectThema3/images/lock.svg" alt="">
+            <img src="/..images/lock.svg" alt="">
             <span>Portaal</span>
         </a>
         <a href="/zoeken" id="mobileSearch" title="Zoeken op deze site">
-            <img src="/ProjectThema3/images/search.svg" alt="">
+            <img src="/..images/search.svg" alt="">
             <span>Zoeken</span>
         </a>
 
@@ -73,7 +73,7 @@
                 <a href="/opleidingen" title="Aanbod van opleidingen" style="background-image: none">Opleidingen</a>
             </li>
             <li id="studietestMobile">
-                <a href="/ProjectThema3/pages/formulier.php" title="Doe nu de studiekeuze test!" style="background-image: none">Studiekeuze test</a>
+                <a href="/..pages/formulier.php" title="Doe nu de studiekeuze test!" style="background-image: none">Studiekeuze test</a>
                 <span class="newMenuItemMobile">New</span>
             </li>
             <li>

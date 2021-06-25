@@ -9,8 +9,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/ProjectThema3/styles/stylesheet.css">
-        <link rel="stylesheet" href="/ProjectThema3/styles/404.css">
+        <link rel="stylesheet" href="../styles/stylesheet.css">
+        <link rel="stylesheet" href="../styles/404.css">
         <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
         <script src="scripts/script.js" defer></script>
         <title>ICT-Academie - Koning Willem I College</title>
@@ -26,7 +26,7 @@
                 <div>
                     <p>De gevraagde pagina is helaas niet gevonden.</p>
                     <p>Probeer het later nog eens, of kies één van de volgende opties:</p>
-                    <a href="/ProjectThema3/index.php">Home</a>
+                    <a href="../index.php">Home</a>
                 </div>
             </section>
         </main>

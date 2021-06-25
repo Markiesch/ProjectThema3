@@ -601,6 +601,10 @@ header .logo
         height: 3.8em;
         width: auto;
     }
+    #slideMenu > ul > li > a, #slideMenu .subtitle 
+    {
+        background-size: 20px;
+    }
 }
 
 @media screen and (max-width: 325px) 

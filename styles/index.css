@@ -4,13 +4,13 @@
     File: styles/index.css
 */
 
-p, a, li 
+main p, main a, main li 
 {
     font-size: 14px;
     line-height: 1.5;
 }
 
-li a 
+main li a 
 {
     font-size: 19px;
     font-weight: 600;

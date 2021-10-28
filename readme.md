@@ -1,5 +1,5 @@
 <div align="center">
-    <a>
+    <a href="https://projectthema3.azurewebsites.net/" target="_blank">
         <img src="images/logo.svg" alt="Logo" width="80" height="80" />
     </a>
     <h1>KW1C Studiekeuzetest - Project Thema 3</h1>
@@ -14,4 +14,4 @@
 <br />
 <br />
 
-![Landing page](https://raw.githubusercontent.com/Markiesch/portfolio/master/images/mockups/opdrachtThema3MockUp.png "Landing Page")
+![Landing page](https://raw.githubusercontent.com/Markiesch/vue-portfolio/main/src/assets/mockups/kw1c.png "Landing Page")
